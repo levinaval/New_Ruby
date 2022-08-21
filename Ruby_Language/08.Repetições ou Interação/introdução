@@ -1,0 +1,17 @@
+Repetição ou Iteração
+  Tipo de estrutura de controle que gerencia quantas vezes um trecho de código será executado.
+  A seguir, algumas instruções de iteração.
+
+  for, while, times, do/while
+
+for
+   Usado para percorrer uma coleção de elementos.
+
+while
+  Instrução que repete um bloco de códigoenquanto sua condição é verificada.
+
+times
+  Executa uma repetição por um determinado número de vezes.
+
+do/while - loop
+  Ele cria um laço de repetição que só é parado quando uma instrução break for verificada.
