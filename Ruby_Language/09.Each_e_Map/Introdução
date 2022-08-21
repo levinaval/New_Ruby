@@ -1,0 +1,9 @@
+Each - Faz a movimentação, percorre na lista ou hash sem altera a variavel.
+
+O escopo da variavel Each não sobrescreve uma outra variavel que venha a ter.
+
+E não modifica o valor da variavel que esta dentro do bloco.
+
+Map - permite cria uma nova lista sem altera a lista ja existente.
+
+O map também pode imprimir so a nova lista. basta altera colocando o map beng(cesto.map!)
