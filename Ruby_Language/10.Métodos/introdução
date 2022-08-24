@@ -1,0 +1,11 @@
+Métodos são uma forma de organizar instruções em um programa, permitindo que trechos de códigos sejam reutilizados.
+
+def soma (x, y, z)
+x, y, z
+end
+
+puts soma (5,6,7)
+
+soma = Método
+(x, y, z) = Parâmetro
+puts soma = Argumentos  
