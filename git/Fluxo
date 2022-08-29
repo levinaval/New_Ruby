@@ -1,0 +1,20 @@
+Fluxo do git para envio de código
+git status
+git add .
+git commit -m "aqui vai uma mensagem descritiva"
+git push origin master
+
+Se acaso eu tiver alterado no meu computador algum arquivo, e no repositório também, eu subo com:
+git fetch --all
+git push --force origin master
+
+Fluxo do git para puxar o código do repositório
+git pull origin master
+
+INSTALAÇÃO DO FFAKER
+https://github.com/ffaker/ffaker
+
+gem install ffaker
+
+E PARA FUNCIONAR NO ARQUIVO, PRECISA COLOCAR O CÓDIGO ABAIXO:
+require 'ffaker'
