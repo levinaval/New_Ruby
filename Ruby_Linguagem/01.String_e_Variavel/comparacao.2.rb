@@ -1,10 +1,22 @@
-senha = 123
+#senha = 123
+#
+#print "digite a senha: "
+#usuario = gets.chomp.to_i
+#
+#if senha == usuario
+#  puts "Senha correta: Acesso permitido"
+# else
+#  puts "Senha incorreta: Acesso negado"
+#end
 
-print "digite a senha: "
-usuario = gets.chomp.to_i
+usuario = "Levi"
 
-if senha == usuario
-  puts "Senha correta: Acesso permitido"
+print "digite o usuario: "
+login = gets.chomp
+
+if usuario == login
+  puts "Usuario correto: Acesso permitido"
  else
-  puts "Senha incorreta: Acesso negado"
+  puts "Usuario incorreto: Acesso negado"
 end
+
