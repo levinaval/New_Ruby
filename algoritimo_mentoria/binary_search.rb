@@ -16,7 +16,7 @@ def binary_search(array, value, first, last)
 end
   
   
-array = Array.new(10) { rand(1..20) }.sort
+array = Array.new(11) { rand(1..20) }.sort
 num = rand(1..20)
 first = 0
 last = array.length - 1
