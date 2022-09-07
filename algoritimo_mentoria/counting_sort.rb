@@ -11,3 +11,14 @@ def counting_sort(array)
   sorted
 end
   
+def create_counting_array(array)
+  counting_array = Array.new(array.max + 1, 0)
+  array.each { |item| counting_array[item] += 1 }
+ 
+  (1..(counting_array.length - 1)).each do |i|
+ counting_array[i] += counting_array[i - 1]
+  end
+ 
+counting_array
+end
+ 
