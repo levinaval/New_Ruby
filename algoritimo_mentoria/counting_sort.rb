@@ -22,3 +22,5 @@ def create_counting_array(array)
 counting_array
 end
  
+puts counting_sort([6, 3, 1, 7, 2, 4, 8, 1, 2, 4]).to_s
+puts counting_sort([1, 4, 1, 2, 7, 5, 2, 0]).to_s
