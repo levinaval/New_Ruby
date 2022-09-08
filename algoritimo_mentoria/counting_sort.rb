@@ -1,18 +1,18 @@
 def tipo_de_contagem(matriz)
 	matriz_de_contagem = criar_tipo_de_contagem(matriz)
   
-	ordenado = Matriz.new(matriz.length)
+	sorted = Array.new(matriz.length)
   
 	matriz.each do |item|
-	  ordenado[matriz_de_contagem[item] - 1] = item
+	  sorted[matriz_de_contagem[item] - 1] = item
 	  matriz_de_contagem[item] -= 1
 	end
   
-  ordenado
+  sorted
 end
   
 def criar_tipo_de_contagem(matriz)
-  matriz_de_contagem = Matriz.new(matriz.max + 1, 0)
+  matriz_de_contagem = Array.new(matriz.max + 1, 0)
   matriz.each { |item| matriz_de_contagem[item] += 1 }
  
   (1..(matriz_de_contagem.length - 1)).each do |i|
