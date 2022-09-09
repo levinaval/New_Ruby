@@ -12,6 +12,4 @@ when "abril"
   puts "tem 30 dias"
 else
   puts "Isso eu não sei!!"
-
-end
-  
+end 
