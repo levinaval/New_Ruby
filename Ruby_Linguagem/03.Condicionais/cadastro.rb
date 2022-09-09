@@ -7,7 +7,7 @@ case decisao
 
  when 1
   puts
-  puts "Responda algumas perguntas"
+  puts "Ok! vamos lá"
  when 2
   puts 
   puts "Deixar para uma próxima vez!" 
@@ -15,4 +15,16 @@ case decisao
   puts "Esta opção não existe!"
  end
 
+ puts "Responda algumas perguntas"
+ 
  cadastro = []
+
+print "Nome: "
+
+cadastro = gets.chomp
+
+print "Idade: "
+
+cadastro = gets.chomp.to_i
+
+puts cadastro
