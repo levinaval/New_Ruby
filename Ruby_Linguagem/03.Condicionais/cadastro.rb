@@ -1,30 +1,40 @@
-puts "Cadastro de Clientes"
-puts "Se deseja fazer seu cadastro agora digite: 1 se não digite: 2 "
+puts "Cadastro de Clientes", ""
+print "Se deseja fazer seu cadastro agora digite: 1 se não digite: 2 = ",""
 
-decisao = gets.chomp.to_f
+decisao = gets.chomp.to_i
 
 case decisao
 
  when 1
-  puts
-  puts "Ok! vamos lá"
+  puts "Ok! vamos lá",""
  when 2
-  puts 
-  puts "Deixar para uma próxima vez!" 
+  puts "Deixar para uma próxima vez!", ""
  else
   puts "Esta opção não existe!"
+  
  end
 
- puts "Responda algumas perguntas"
+ puts "Responda algumas perguntas",""
  
- cadastro = []
+ print "Seu nome: "
+ nome = gets.chomp
 
-print "Nome: "
+ if nome.length < 4
+    puts "Não alcansou o mínimo"  
+   elsif nome.length > 10
+    puts "Excedeu ao máximo"
+ end
 
-cadastro = gets.chomp
+ print "Qual a sua idade: "
+ idade = gets.chomp.to_i
 
-print "Idade: "
+ if idade <= 0
+    puts "Não exeste idade menor que zero!"
+   elsif idade >= 100
+    puts "Você é velinho!"
+ end
 
-cadastro = gets.chomp.to_i
+ 
 
-puts cadastro
+ puts "Nome: #{nome}"
+ puts "Nome: #{idade}"
