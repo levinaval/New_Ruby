@@ -34,7 +34,26 @@ case decisao
     puts "Você é velinho!"
  end
 
- 
+ print "Qual a sua altura: "
+ altura = gets.chomp.to_f
+
+ if altura <= 0  
+  puts "Esta altura não exeste!"
+ end
+
+ puts "Qual é o seu sexo"
+ print "(M) Masculino e (F) Feminino :"
+ sexo = gets.chomp
+
+ if sexo == "m"
+    puts "Masculino"  
+   elsif == "f"
+    puts "Feminino" 
+   else
+    puts "Sexo inexistente"
+ end
 
  puts "Nome: #{nome}"
- puts "Nome: #{idade}"
+ puts "Idade: #{idade}"
+ puts "Altura: #{altura}"
+ puts "Sexo: #{sexo}"
