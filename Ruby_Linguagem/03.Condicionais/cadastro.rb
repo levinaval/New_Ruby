@@ -75,3 +75,5 @@ case decisao
  puts "Idade: #{idade}"
  puts "Altura: #{altura}"
  puts "Sexo: #{sexo}"
+ puts "Rua: #{rua}"
+ puts "Número: #{numero}"
