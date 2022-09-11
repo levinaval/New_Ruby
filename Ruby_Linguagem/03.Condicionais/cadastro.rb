@@ -57,9 +57,9 @@ case decisao
  endereco = gets.chomp
 
 if endereco <= 3 
-   puts ""
-elsif 
-   
+   puts "Pouco caracteres."
+elsif >= 20
+   puts "Quantidade assima do máximo."
 end 
 
  puts "Nome: #{nome}"
