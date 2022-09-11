@@ -53,6 +53,15 @@ case decisao
     puts "Sexo inexistente"
  end
 
+ puts "Qual o seu endereço: ",""
+ endereco = gets.chomp
+
+if endereco <= 3 
+   puts ""
+elsif 
+   
+end 
+
  puts "Nome: #{nome}"
  puts "Idade: #{idade}"
  puts "Altura: #{altura}"
