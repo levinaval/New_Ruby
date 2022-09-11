@@ -53,14 +53,23 @@ case decisao
     puts "Sexo inexistente"
  end
 
- puts "Qual o seu endereço: ",""
- endereco = gets.chomp
+ puts "Nos informe o seu endereço: ",""
 
-if endereco <= 3 
-   puts "Pouco caracteres."
-elsif >= 20
-   puts "Quantidade assima do máximo."
-end 
+ puts "Rua: "
+ rua = gets.chomp
+
+ if rua >= 3 
+    puts "Pouco caracteres para Rua."
+   elsif <= 20
+    puts "Quantidade assima do máximo para Rua."
+ end 
+
+ puts "Número: "
+ numero = gets.chomp.to_i
+
+ if numero > 0 
+    puts "Número insuficiente"
+ end
 
  puts "Nome: #{nome}"
  puts "Idade: #{idade}"
