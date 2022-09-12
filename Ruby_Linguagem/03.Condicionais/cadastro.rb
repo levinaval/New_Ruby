@@ -55,7 +55,7 @@ case decisao
 
  puts "Nos informe o seu endereço: ",""
 
- puts "Rua: "
+ print "Rua: "
  rua = gets.chomp
 
  if rua >= 3 
@@ -64,11 +64,20 @@ case decisao
     puts "Quantidade assima do máximo para Rua."
  end 
 
- puts "Número: "
+ print "Número: "
  numero = gets.chomp.to_i
 
  if numero > 0 
     puts "Número insuficiente"
+ end
+
+ print "Cep: "
+ cep = gets.chomp.to_f
+
+ if cep > 0
+    puts "Incira o Cep."
+   elsif cep < 9
+    puts "Cep inesistente."
  end
 
  puts "Nome: #{nome}"
