@@ -34,7 +34,7 @@ print "Se deseja fazer seu cadastro agora digite: 1 se não digite: 2 = ",""
 
  if sexo == "m"
     puts "Masculino"  
-   elsif == "f"
+   elsif sexo == "f"
     puts "Feminino" 
    else
     puts "Sexo inexistente"
@@ -45,9 +45,9 @@ print "Se deseja fazer seu cadastro agora digite: 1 se não digite: 2 = ",""
  print "Rua: "
  rua = gets.chomp
 
- if rua >= 3 
+ if rua > 3 
     puts "Pouco caracteres para Rua."
-   elsif <= 20
+   elsif rua < 20
     puts "Quantidade assima do máximo para Rua."
  end 
 
