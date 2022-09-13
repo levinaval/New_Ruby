@@ -1,19 +1,6 @@
 puts "Cadastro de Clientes", ""
 print "Se deseja fazer seu cadastro agora digite: 1 se não digite: 2 = ",""
 
-decisao = gets.chomp.to_i
-
-case decisao
-
- when 1
-  puts "Ok! vamos lá",""
- when 2
-  puts "Deixar para uma próxima vez!", ""
- else
-  puts "Esta opção não existe!"
-  
- end
-
  puts "Responda algumas perguntas",""
  
  print "Seu nome: "
