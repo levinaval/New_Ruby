@@ -49,9 +49,9 @@ introducao
  print "Rua: "
  rua = gets.chomp
 
- if rua > 3 
+ if rua == 3 
     puts "Pouco caracteres para Rua."
-   elsif rua < 20
+   elsif rua == 20
     puts "Quantidade assima do máximo para Rua."
  end 
 
@@ -68,7 +68,7 @@ introducao
  if cep > 0
     puts "Incira o Cep."
    elsif cep < 9
-    puts "Cep inesistente."
+    puts "Cep inesistente.","",""
  end
 
  puts "Nome: #{nome}"
