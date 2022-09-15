@@ -8,12 +8,14 @@ introducao
  puts "Responda algumas perguntas",""
  
  print "Seu nome: "
- nome = gets.chomp
+ name = gets.chomp
 
- if nome.length < 4
-    puts "Não alcansou o mínimo"  
-   elsif nome.length > 10
-    puts "Excedeu ao máximo"
+ def name
+   if name.length < 4
+      puts "Não alcansou o mínimo"  
+     elsif name.length > 10
+      puts "Excedeu ao máximo"
+   end
  end
 
  print "Qual a sua idade: "
@@ -71,7 +73,7 @@ introducao
     puts "Cep inesistente.","",""
  end
 
- puts "Nome: #{nome}"
+ puts "Nome: #{name}"
  puts "Idade: #{idade}"
  puts "Altura: #{altura}"
  puts "Sexo: #{sexo}"
