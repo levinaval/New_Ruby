@@ -21,10 +21,12 @@ introducao
  print "Qual a sua idade: "
  idade = gets.chomp.to_i
 
- if idade <= 0
-    puts "Não exeste idade menor que zero!"
-   elsif idade >= 100
-    puts "Você é velinho!"
+ def idade
+   if idade <= 0
+      puts "Não exeste idade menor que zero!"
+     elsif idade >= 100
+      puts "Você é velinho!"
+   end
  end
 
  print "Qual a sua altura: "
