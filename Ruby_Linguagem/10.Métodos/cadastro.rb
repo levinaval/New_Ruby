@@ -32,10 +32,12 @@ introducao
  print "Qual a sua altura: "
  altura = gets.chomp.to_f
 
- if altura <= 0  
-  puts "Esta altura não exeste!"
+ def altura
+   if altura <= 0  
+      puts "Esta altura não exeste!"
+   end   
  end
-
+ 
  puts "Qual é o seu sexo"
  print "(M) Masculino e (F) Feminino :"
  sexo = gets.chomp
