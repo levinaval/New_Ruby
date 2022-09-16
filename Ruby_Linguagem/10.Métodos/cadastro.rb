@@ -56,13 +56,15 @@ introducao
 
  print "Rua: "
  rua = gets.chomp
-
- if rua == 3 
-    puts "Pouco caracteres para Rua."
-   elsif rua == 20
-    puts "Quantidade assima do máximo para Rua."
- end 
-
+ 
+ def rua
+   if rua == 3 
+      puts "Pouco caracteres para Rua."
+     elsif rua == 20
+      puts "Quantidade assima do máximo para Rua."
+   end  
+ end
+  
  print "Número: "
  numero = gets.chomp.to_i
 
