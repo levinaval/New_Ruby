@@ -42,14 +42,16 @@ introducao
  print "(M) Masculino e (F) Feminino :"
  sexo = gets.chomp
 
- if sexo == "m"
-    puts "Masculino"  
-   elsif sexo == "f"
-    puts "Feminino" 
-   else
-    puts "Sexo inexistente"
+ def sexo
+   if sexo == "m"
+      puts "Masculino"  
+     elsif sexo == "f"
+      puts "Feminino" 
+     else
+      puts "Sexo inexistente"
+   end   
  end
-
+ 
  puts "Nos informe o seu endereço: ",""
 
  print "Rua: "
