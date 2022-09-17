@@ -67,11 +67,11 @@ introducao
   
  print "Número: "
  numero = gets.chomp.to_i
-
- if numero > 0 
-    puts "Número insuficiente"
+ def numero
+   if numero > 0 
+      puts "Número insuficiente"
+   end
  end
-
  print "Cep: "
  cep = gets.chomp.to_f
 
