@@ -75,12 +75,14 @@ introducao
  print "Cep: "
  cep = gets.chomp.to_f
 
- if cep > 0
-    puts "Incira o Cep."
-   elsif cep < 9
-    puts "Cep inesistente.","",""
+  def cep
+   if cep > 0
+      puts "Incira o Cep."
+     elsif cep < 9
+      puts "Cep inesistente.","",""
+   end
  end
-
+ 
  puts "Nome: #{name}"
  puts "Idade: #{idade}"
  puts "Altura: #{altura}"
