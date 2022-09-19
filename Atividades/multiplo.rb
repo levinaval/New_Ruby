@@ -2,8 +2,13 @@
 
 print "Digite um número: "
 x = gets.to_i
-if x % 7 == 0 then
-  puts "#{x} é multiplo de 7."
-else
-  puts "#{x} não é multiplo de 7."
+
+def multiplo(x)
+ if x % 7 == 0 then
+   puts "#{x} é multiplo de 7."
+  else
+   puts "#{x} não é multiplo de 7."
+ end
 end
+
+multiplo(x)
