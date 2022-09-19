@@ -5,13 +5,14 @@ print "digite um número: "
 x = gets.chomp.to_i
 
 if x <= 0 && >= 90
-  puts "O #{x} esta no primeiro quandrante"
-elsif 
-  puts "O #{x} esta no segundo quandrante"
-elsif 
-  puts "O #{x} esta no terceiro quandrante"
-elsif 
-  puts "O #{x} esta no quarto quandrante"
-else
-  
-end
+  puts "O #{x} está no primeiro quadrante"
+ elsif x <= 90 && >= 180
+  puts "O #{x} está no segundo quadrante"
+ elsif x <= 180 && >= 270
+  puts "O #{x} está no terceiro quadrante"
+ elsif x <= 270 && >= 360
+  puts "O #{x} está no quarto quadrante"
+ else
+  puts "Esse grau não existe"
+ end
+ 
