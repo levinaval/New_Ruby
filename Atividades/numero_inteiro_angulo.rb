@@ -4,7 +4,19 @@
 print "digite um número de um ângulo: "
 x = gets.chomp.to_i
 
-puts  x / 360 
+v = x / 360 
+
+if v >= 0 && v <= 90
+  puts "Um quarto de volta"
+ elsif v >= 90 && v <= 180
+  puts "Does quarto de volta"
+ elsif v >= 180 && v <= 270
+  puts "Trẽs quarto de volta"
+ elsif v >= 270 && v <= 360
+  puts "Quatro quarto de volta"
+ else
+  puts "#{v} volta(s)"
+end
 
 if x >= 0 && x <= 90
   puts "O ângolo #{x} está no primeiro quadrante"
