@@ -2,10 +2,10 @@
 
 
 print "digite um número de um ângulo: "
-angulo_entrada = gets.to_i
+angulo = gets.to_i
 
-angulo = angulo_entrada % 360
-voltas = angulo_entrada / 360
+#angulo = angulo #% 360
+voltas = angulo / 360
 
 quadrante = 
  if    angulo < 90  then "Primeiro"
@@ -13,7 +13,7 @@ quadrante =
  elsif angulo < 270 then "Terceiro"
  else                    "Quarto"  end
 
-  puts "O ângulo #{angulo_entrada} dá #{voltas} voltas e fica no #{quadrante} quadrante."
+  puts "O ângulo #{angulo} dá #{voltas} voltas e fica no #{quadrante} quadrante."
 
 #v = x / 360 
 #
