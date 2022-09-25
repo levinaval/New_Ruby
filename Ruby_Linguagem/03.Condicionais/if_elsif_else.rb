@@ -15,8 +15,10 @@
 # else- É uma comparação(se não for isso é aquilo)
 
 x = 12
-if    x == 10 then "10"
-elsif x == 50 then "50"
-else               "não" end
 
-puts "X é igual a #{x}"
+comparacao =
+if    x == 10 then "X é igual a 10"
+elsif x == 50 then "X é igual a 50"
+else               "X não é igual nem a 10 e nem 50" end
+
+puts "Este valor #{x} #{comparacao}"
