@@ -16,6 +16,7 @@ number = gets.chomp.to_i
 #puts number_positive(number)
 
 modo = 
-if number > 0 then
+if number > 0 then "É positivo"
+else               "Não é positivo" end
 
 puts "O número #{number} #{modo}"
