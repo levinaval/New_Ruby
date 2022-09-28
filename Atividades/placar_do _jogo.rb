@@ -1,1 +1,11 @@
 #Escreva um programa leia dois nomes de times de futebol, a quantidade de gols do primeiro time, a quantidade de gols do segundo time e mostre o nome do time vencedor da partida
+
+print "Informe o nome do primeiro time: ",""
+time1 = gets.chomp
+print "Informe o quantos gols o primeiro time fez: ",""
+placar1 = gets.to_i
+
+print "Informe o nome do segundo time: ",""
+time2 = gets.chomp
+print "Informe o quantos gols o segundo time fez: ",""
+placar2 = gets.to_i
