@@ -1,0 +1,1 @@
+#Escreva um programa leia dois nomes de times de futebol, a quantidade de gols do primeiro time, a quantidade de gols do segundo time e mostre o nome do time vencedor da partida
