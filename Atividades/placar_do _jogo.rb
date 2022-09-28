@@ -9,3 +9,8 @@ print "Informe o nome do segundo time: ",""
 time2 = gets.chomp
 print "Informe o quantos gols o segundo time fez: ",""
 placar2 = gets.to_i
+
+jogo =
+if placar1 > placar2
+  puts "O #{time1} é o vencedor do jogo por #{placar1} x #{placar2}"
+  
