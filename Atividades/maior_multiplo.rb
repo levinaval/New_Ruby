@@ -6,9 +6,8 @@ maior = gets.to_i
 print "Digite o número menor que o primeiro: "
 menor = gets.to_i
 
-if maior % menor == 0 
-  puts "É multiplo do menor!"
-else
-  puts "Não é multiplo do menor"
+resultado =
+if maior % menor == 0 then "É multiplo"
+else                       "Não é multiplo" end
 
-end
+puts "O número #{menor}, #{resultado} do maior"
