@@ -10,11 +10,18 @@ time2 = gets.chomp
 print "Informe o quantos gols o segundo time fez: ",""
 placar2 = gets.to_i
 
+
+#if placar1 > placar2
+#  puts "O #{time1} é o vencedor do jogo por #{placar1} x #{placar2}"
+#elsif placar1 < placar2
+#  puts "O #{time2} é o vencedor do jogo por #{placar2} x #{placar1}"
+#else
+#  puts "O jogo entre #{time1} e #{time2} terminou empatado por #{placar1} x #{placar2}"
+#end
+
 jogo =
-if placar1 > placar2
-  puts "O #{time1} é o vencedor do jogo por #{placar1} x #{placar2}"
-elsif placar1 < placar2
-  puts "O #{time2} é o vencedor do jogo por #{placar2} x #{placar1}"
-else
-  puts "O jogo entre #{time1} e #{time2} terminou empatado por #{placar1} x #{placar2}"
-end
+if placar1 > placar2 then "#{time1} vence o jogo por #{placar1} x #{placar2}"
+elsif placar1 < placar2 then "#{time2} vence o jogo por #{placar2} x #{placar1}"
+else "Jogo termina empatado" end
+
+puts "O #{jogo}"
