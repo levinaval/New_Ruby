@@ -16,5 +16,5 @@ if placar1 > placar2
 elsif placar1 < placar2
   puts "O #{time2} é o vencedor do jogo por #{placar2} x #{placar1}"
 else
-  puts "O jogo entre #{time1} e #{time2} terminou empatado #{placar1} x #{placar2}"
+  puts "O jogo entre #{time1} e #{time2} terminou empatado por #{placar1} x #{placar2}"
 end
