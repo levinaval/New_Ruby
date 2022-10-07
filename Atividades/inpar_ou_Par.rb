@@ -3,6 +3,9 @@
 print "Nome do primeiro jogador: ",""
 jogador1 = gets.chomp
 
+print "Coloque o número escolhido pelo primeiro jogador: ",""
 
 print "Nome do segundo jogador: ",""
 jogador2 = gets.chomp
+
+print "Coloque o número escolhido pelo segundoo jogador: ",""
