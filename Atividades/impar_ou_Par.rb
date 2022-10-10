@@ -4,8 +4,12 @@ print "Nome do primeiro jogador: ",""
 jogador1 = gets.chomp
 
 print "Coloque o número escolhido pelo primeiro jogador: ",""
-
+n1 = gets.chomp.to_i
 print "Nome do segundo jogador: ",""
 jogador2 = gets.chomp
 
 print "Coloque o número escolhido pelo segundoo jogador: ",""
+n2 = gets.chomp.to_i
+
+resultado = 
+if 
