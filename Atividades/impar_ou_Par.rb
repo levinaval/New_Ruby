@@ -16,4 +16,4 @@ resultado = if (n1 + n2) %2 == 0 then "Pra" else "Impar" end
  
 vencedor = if resultado == "Par" then jogador1 else jogador2 end
    
-puts "O vencedor é #{resultado} parabéns #{vencedor}"
+puts "O vencedor é #{resultado}, o jogador #{} e seu adiversario escolheu #{} escolheu #{}parabéns #{vencedor}"
