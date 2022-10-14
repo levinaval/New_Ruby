@@ -16,6 +16,6 @@ elsif y = 0 && x < 0 then  "Eixo x negativo"
 elsif x = 0 && y > 0 then  "Eixo y positivo"
 elsif x = 0 && y < 0 then  "Eixo y negativo"
 elsif x = 0 && y = 0 then  "Origem dos eixos" end
-#else                             
+                            
 
 puts "O número digitado #{x} e #{y} esta no #{quadrante}"
