@@ -14,8 +14,8 @@ n2 = gets.chomp.to_i
 
 result = if (n1 + n2) %2 == 0 then "Pra" else "Impar" end 
  
-vencedor = if result == "Par" then player1 else player2 end
+winner = if result == "Par" then player1 else player2 end
 
-ns = if vencedor == "Par" then ni else n2 end
+ns = if winner == "Par" then ni else n2 end
    
-puts "O vencedor é #{result}, o jogador escolheu o número #{ns} parabéns #{vencedor}"
+puts "O winner é #{result}, o jogador escolheu o número #{ns} parabéns #{winner}"
