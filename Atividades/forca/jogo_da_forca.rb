@@ -1,4 +1,4 @@
-def jogo_da_forca
+def jogo_da_forca(da_boas_vindas)
   nome = da_boas_vindas
   
   loop do
@@ -7,4 +7,6 @@ def jogo_da_forca
           break
       end
   end
- end 
+end 
+
+ puts jogo_da_forca("Bem vindos")
