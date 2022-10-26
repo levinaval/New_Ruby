@@ -3,3 +3,8 @@
 print "Escreva um Número real: "
 n_real = gets.chomp.to_f
 
+if n_real 
+  
+elsif 
+  
+end
