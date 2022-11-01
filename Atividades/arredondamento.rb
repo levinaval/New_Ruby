@@ -6,6 +6,6 @@ real = gets.chomp
 inteiro = real.to_i
 fracao = real.to_f - inteiro
 
-redondo = inteiro + if fracao > 0.5 then 1 else 0 end
+redondo = inteiro + if fracao > 0.4 then 1 else 0 end
 
 puts "#{real} arredondado para inteiro é #{redondo}."
