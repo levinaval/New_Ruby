@@ -1,0 +1,3 @@
+to_s converte coisas para strings
+to_i converte coisas para integers (números)
+to_a converte coisas para arrays
