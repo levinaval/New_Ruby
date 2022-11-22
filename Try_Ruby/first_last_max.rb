@@ -1,7 +1,8 @@
+def contagem
 
-
-def contagem("le", 34, "ul")
- 
+  lista = []
+  lista.push("le", 34, "ul")
+  
 end
 
-puts contagem[0]("le", 34, "ul")
+puts contagem
