@@ -1,8 +1,8 @@
-x = 10
+x = 11
 
 resultado = 
-if    x == 10 then "O resultado está correto!"
-elsif x == 11 then "O resultado é diferente mas ainda tolerante."
-else               "O resultado está muito errado!" end
+if    x == 10 then "o resultado está correto!"
+elsif x == 11 then "o resultado é diferente mas ainda tolerante."
+else               "o resultado está muito errado!" end
   
   puts "Em comparação #{resultado}"
