@@ -8,10 +8,7 @@ print "Escreva o segundo nome: "
 p2 = gets.chomp
 
 comparacao =
-if p1 == p2 then "Os nomes são iguais"
-  
-elsif p1 == p2 then "Os nomes são iguais"
-  
-else
-  
-end
+if    p1 == p2 then "Os nomes são iguais"
+elsif p1 = p2  then "Os nomes são diferentes" end
+
+puts comparacao
