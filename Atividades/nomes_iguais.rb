@@ -9,7 +9,11 @@ p2 = gets.chomp
 
 comparacao =
 if    p1 == p2                then "Os nomes são iguais"
-elsif p1.upcase == p2.upcase  then "Os nomes são iguais mais com letra maiúcula" 
+elsif p1.upcase == p2.upcase  then "Os nomes são iguais mais com letra maiúscula" 
 else   "São diferentes"       end
 
 puts comparacao
+
+
+
+  
