@@ -7,16 +7,9 @@ p1 = gets.chomp
 print "Escreva o segundo nome: "
 p2 = gets.chomp
 
-#comparacao =
-#if    p1 == p2                then "Os nomes são iguais"
-#elsif p1.upcase == p2.upcase  then "Os nomes são iguais mais com letra maiúscula" 
-#else   "São diferentes"       end
-#
-#puts comparacao
-
-
 comparacao =
-if    p1 == p2.upcase then "Os nomes são iguais mais o #{p2} tem letra maiúscula"
-elsif p1.upcase == p2 then "Os nomes são iguais mais o #{p1} tem letra maiúscula" end
+if    p1 == p2                then "Os nomes são iguais"
+elsif p1.upcase == p2.upcase  then "Os nomes são iguais mais com letra maiúscula" 
+else   "São diferentes"       end
 
-  puts comparacao
+puts comparacao
