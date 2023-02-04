@@ -1,4 +1,6 @@
-#O while é uma estrutura de repetição condicional que executa enquanto a condição for verdadeira. Nesse caso, a condição é "numero % 2 != 0", que será falsa quando o usuário digitar um número par. O trecho de código a ser executado repetidamente se localiza entre o begin (linha 1) e o end (linha 4).
+# O while é uma estrutura de repetição condicional que executa enquanto a condição for verdadeira. 
+# Nesse caso, a condição é "numero % 2 != 0", que será falsa quando o usuário digitar um número par. 
+# O trecho de código a ser executado repetidamente se localiza entre o begin (linha 1) e o end (linha 4).
 
 begin
   puts "Digite um número par: "
