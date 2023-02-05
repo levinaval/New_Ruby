@@ -22,5 +22,5 @@ require 'ffaker'
 Comandos para mudar as verções do Ruby com o RVM
 
 source ~/.rvm/scripts/rvm
-rvm install 2.2.3
-rvm use 2.2.3 -default
+rvm install *.*.* <- número da verção
+rvm use *.*.* -default
