@@ -19,7 +19,7 @@ class AboutClassMethods < Neo::Koan
 
   def test_objects_have_methods
     fido = Dog.new
-    assert fido.methods.size > (false)
+    assert fido.methods.size > ()
   end
 
   def test_classes_have_methods

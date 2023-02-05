@@ -18,3 +18,9 @@ gem install ffaker
 
 E PARA FUNCIONAR NO ARQUIVO, PRECISA COLOCAR O CÓDIGO ABAIXO:
 require 'ffaker'
+
+Comandos para mudar as verções do Ruby com o RVM
+
+source ~/.rvm/scripts/rvm
+rvm install *.*.* <- número da verção
+rvm use *.*.* -default
