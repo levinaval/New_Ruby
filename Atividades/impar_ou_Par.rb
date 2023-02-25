@@ -12,7 +12,7 @@ n1 = gets.chomp.to_i
 print "Jogador IMPAR #{player2} escolha um número: ",""
 n2 = gets.chomp.to_i
 
-result = if (n1 + n2) %2 == 0 then "Pra" else "Impar" end 
+result = if (n1 + n2) %2 == 0 then "Par" else "Impar" end 
  
 winner = if result == "Par" then player1 else player2 end
 
