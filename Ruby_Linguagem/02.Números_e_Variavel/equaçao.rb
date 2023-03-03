@@ -3,7 +3,6 @@
 
 def calcDelt(a, b, c)
   @delt = (b*b-4*a*c)
-  
 end
 
 def calcResult(a, b)
@@ -13,6 +12,7 @@ def calcResult(a, b)
 end
 
 def postResult
-  @delt > 0 ? puts ("x1 = #{@x1}ex2 = #{@x2}"):
+  @delt > 0 ? 
+  puts ("x1 = #{@x1} ex2 = #{@x2}")
   puts ("Delta é negativo")
 end
