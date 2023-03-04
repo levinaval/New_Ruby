@@ -1,18 +1,8 @@
-@x1
-@x2
+print "Digite o valor de x²: "
+a = gets.chomp.to_i
 
-def calcDelt(a, b, c)
-  @delt = (b*b-4*a*c)
-end
+print "Digite o valor de x: "
+b = gets.chomp.to_i
 
-def calcResult(a, b)
-  @x1 = (-b + Math.sqrt(@delt))/(2*a)
-  @x2 = (-b + Math.sqrt(@delt))/(2*a)
-  to_s
-end
-
-def postResult
-  @delt > 0 ? 
-  puts ("x1 = #{@x1} ex2 = #{@x2}")
-  puts ("Delta é negativo")
-end
+print "Digite o ultimo valor: "
+c = gets.chomp.to_i
