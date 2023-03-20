@@ -1,5 +1,7 @@
-carro = "versa"
-marca = "deixa para la"
+print "Qual é a marca do seu carro? "
+carro = gets.chomp
+
+#marca = "deixa para la"
 
 #if carro != "versa"
 #  marca = "nissa"
@@ -7,7 +9,7 @@ marca = "deixa para la"
 #
 #puts "qual é seu carro? #{marca}!"
 
+marca =
+if carro == "versa" then "È o melhor!" elsif carro != "versa" then "É rasoavel..." end
 
-
-
-puts "qual é seu carro? #{marca}!"
+puts "O seu carro é um #{carro}, #{marca}!"
