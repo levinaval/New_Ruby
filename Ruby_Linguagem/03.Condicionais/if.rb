@@ -1,5 +1,4 @@
-print "Qual é a sua profição? ",""
-
+print "Qual é a sua profição? "
 nome = gets.chomp
 
 #if nome == "motorista"
@@ -14,8 +13,6 @@ nome = gets.chomp
 #end
 
 proficao = 
-if     nome == "profição em extinção!"
-elsif  nome == "Grande profição em crescimento!!"
-else           "Ainda tem algun futuro! kkk" end
+if nome == "motorista" then "profição em extinção!" elsif nome == "progamador" then "Grande profição em crescimento!!" else "Ainda tem algun futuro? kkk" end
 
 puts "Esta profição #{nome}, #{proficao} "
