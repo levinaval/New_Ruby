@@ -1,3 +1,4 @@
+print "escolha um mês do ano: "
 mes = gets.chomp
 
 case mes
