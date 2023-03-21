@@ -3,7 +3,7 @@
 lista = []
 
 lista.push("ha", "he", "hi", "kk", "rr")
-print lista[0..4] 
+puts lista[0..4] 
 
 ##código para acessar os ultimos item em uma Array.
 
