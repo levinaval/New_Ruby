@@ -96,26 +96,30 @@ if acrescentar == "S"
  puts "l/ lanche ou b/ bebidas?"
  
 elsif acrescentar == "nao"
-  puts
-  puts "Finalizando o pedido..."
-  puts
-  puts "Aperte ENTER para conferir seu pedido."
-  puts
+ puts
+ puts "Finalizando o pedido..."
+ puts
+ puts "Aperte ENTER para conferir seu pedido."
+ puts
 
  else
  puts "Opção não reconhecida!"
 end
 
 retira = gets.chomp
-puts "________________________________________"
+ puts "________________________________________"
 
 if retira == "l"
 
-  puts menu_de_lanche.sort
-  puts
-  puts "o que deseja retirar?"
+ puts menu_de_lanche.sort
+ puts "Este é o seu pedido:"
+ puts "o que deseja retirar?"
 
-else
+ elsif retira == "b"
+  puts
+  puts menu_de_lanche = []
+
+ else
   puts "Comando não entendido"
 
 end
