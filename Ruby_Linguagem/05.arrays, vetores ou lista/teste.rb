@@ -112,15 +112,15 @@ retira = gets.chomp
 if retira == "l"
 
  puts menu_de_lanche.sort
- puts "Este é o seu pedido:"
  puts "o que deseja retirar?"
 
  elsif retira == "b"
-  puts
-  puts menu_de_lanche = []
-
+  
+ puts "Este é o seu pedido:"
+ puts menu_de_lanche.sort
+ 
  else
-  puts "Comando não entendido"
+ puts "Comando não entendido"
 
 end
 
