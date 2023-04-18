@@ -32,37 +32,37 @@ menu_de_lanche = []
 menu_de_lanche << gets.chomp
 puts
 puts "________________________________________"
+
+menu_de_bebidas = ["Suco", "Refrigerante", "Água de cocô", "Caldo de cana"]
  
-#menu_de_bebidas = ["Suco", "Refrigerante", "Água de cocô", "Caldo de cana"]
-# 
-#menu_de_bebidas.push()
+menu_de_bebidas.push()
+
+menu_de_bebidas_organisada = menu_de_bebidas.sort
+  
+ puts "Algo para beber?"
+ puts "Sim ou Não" 
+ puts 
+decisao = gets.chomp
+ puts "________________________________________"
+
+if decisao == "sim"
+ puts
+ puts "Menu de bebidas"
+ puts 
+ puts menu_de_bebidas
+ puts
  
-#menu_de_bebidas_organisada = menu_de_bebidas.sort
-#  
-# puts "Algo para beber?"
-# puts "Sim ou Não" 
-# puts 
-#decisao = gets.chomp
-# puts "________________________________________"
-#
-#if decisao == "sim"
-# puts
-# puts "Menu de bebidas"
-# puts 
-# puts menu_de_bebidas
-# puts
-# 
-#elsif decisao == "nao"
-# puts "Certo!"
-#  
-#else
-# puts "Não entende..." 
-#end
-# 
-#menu_de_bebidas = []
-# 
-#menu_de_bebidas << gets.chomp
-#puts "________________________________________"
+elsif decisao == "nao"
+ puts "Certo!"
+  
+else
+ puts "Não entende..." 
+end
+ 
+menu_de_bebidas = []
+ 
+menu_de_bebidas << gets.chomp
+puts "________________________________________"
  
  puts "Ok..."
  puts
