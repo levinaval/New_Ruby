@@ -1,3 +1,4 @@
+
 require_relative 'lanche'
 require_relative 'bebidas'
 require_relative 'pedido_lanche'
@@ -16,7 +17,7 @@ require_relative 'pedido_bebida'
 if decisao == "sim"
  puts "Este é o menu."
  puts 
- puts menu_de_lanche_organizada
+ puts menu_de_lanche
  puts 
  
  
