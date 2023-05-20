@@ -1,116 +1,85 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
-class AboutHashes < Neo::Koan
-  def test_creating_hashes
-    empty_hash = Hash.new
-    assert_equal __, empty_hash.class
-    assert_equal(__, empty_hash)
-    assert_equal __, empty_hash.size
-  end
+class AboutInheritance < Neo::Koan
+  class Dog
+    attr_reader :name
 
-  def test_hash_literals
-    hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash.size
-  end
-
-  def test_accessing_hashes
-    hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash[:one]
-    assert_equal __, hash[:two]
-    assert_equal __, hash[:doesnt_exist]
-  end
-
-  def test_accessing_hashes_with_fetch
-    hash = { :one => "uno" }
-    assert_equal __, hash.fetch(:one)
-    assert_raise(___) do
-      hash.fetch(:doesnt_exist)
+    def initialize(name)
+      @name = name
     end
 
-    # THINK ABOUT IT:
-    #
-    # Why might you want to use #fetch instead of #[] when accessing hash keys?
+    def bark
+      "WOOF"
+    end
   end
 
-  def test_changing_hashes
-    hash = { :one => "uno", :two => "dos" }
-    hash[:one] = "eins"
+  class Chihuahua < Dog
+    def wag
+      :happy
+    end
 
-    expected = { :one => __, :two => "dos" }
-    assert_equal __, hash
-
-    # Bonus Question: Why was "expected" broken out into a variable
-    # rather than used as a literal?
+    def bark
+      "yip"
+    end
   end
 
-  def test_hash_is_unordered
-    hash1 = { :one => "uno", :two => "dos" }
-    hash2 = { :two => "dos", :one => "uno" }
-
-    assert_equal __, hash1 == hash2
+  def test_subclasses_have_the_parent_as_an_ancestor
+    assert_equal __, Chihuahua.ancestors.include?(Dog)
   end
 
-  def test_hash_keys
-    hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash.keys.size
-    assert_equal __, hash.keys.include?(:one)
-    assert_equal __, hash.keys.include?(:two)
-    assert_equal __, hash.keys.class
+  def test_all_classes_ultimately_inherit_from_object
+    assert_equal __, Chihuahua.ancestors.include?(Object)
   end
 
-  def test_hash_values
-    hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash.values.size
-    assert_equal __, hash.values.include?("uno")
-    assert_equal __, hash.values.include?("dos")
-    assert_equal __, hash.values.class
+  def test_subclasses_inherit_behavior_from_parent_class
+    chico = Chihuahua.new("Chico")
+    assert_equal __, chico.name
   end
 
-  def test_combining_hashes
-    hash = { "jim" => 53, "amy" => 20, "dan" => 23 }
-    new_hash = hash.merge({ "jim" => 54, "jenny" => 26 })
+  def test_subclasses_add_new_behavior
+    chico = Chihuahua.new("Chico")
+    assert_equal __, chico.wag
 
-    assert_equal __, hash != new_hash
-
-    expected = { "jim" => __, "amy" => 20, "dan" => 23, "jenny" => __ }
-    assert_equal __, expected == new_hash
+    assert_raise(___) do
+      fido = Dog.new("Fido")
+      fido.wag
+    end
   end
 
-  def test_default_value
-    hash1 = Hash.new
-    hash1[:one] = 1
+  def test_subclasses_can_modify_existing_behavior
+    chico = Chihuahua.new("Chico")
+    assert_equal __, chico.bark
 
-    assert_equal __, hash1[:one]
-    assert_equal __, hash1[:two]
-
-    hash2 = Hash.new("dos")
-    hash2[:one] = 1
-
-    assert_equal __, hash2[:one]
-    assert_equal __, hash2[:two]
+    fido = Dog.new("Fido")
+    assert_equal __, fido.bark
   end
 
-  def test_default_value_is_the_same_object
-    hash = Hash.new([])
+  # ------------------------------------------------------------------
 
-    hash[:one] << "uno"
-    hash[:two] << "dos"
-
-    assert_equal __, hash[:one]
-    assert_equal __, hash[:two]
-    assert_equal __, hash[:three]
-
-    assert_equal __, hash[:one].object_id == hash[:two].object_id
+  class BullDog < Dog
+    def bark
+      super + ", GROWL"
+    end
   end
 
-  def test_default_value_with_block
-    hash = Hash.new {|hash, key| hash[key] = [] }
-
-    hash[:one] << "uno"
-    hash[:two] << "dos"
-
-    assert_equal __, hash[:one]
-    assert_equal __, hash[:two]
-    assert_equal __, hash[:three]
+  def test_subclasses_can_invoke_parent_behavior_via_super
+    ralph = BullDog.new("Ralph")
+    assert_equal __, ralph.bark
   end
+
+  # ------------------------------------------------------------------
+
+  class GreatDane < Dog
+    def growl
+      super.bark + ", GROWL"
+    end
+  end
+
+  def test_super_does_not_work_cross_method
+    george = GreatDane.new("George")
+    assert_raise(___) do
+      george.growl
+    end
+  end
+
 end
