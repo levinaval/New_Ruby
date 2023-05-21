@@ -5,19 +5,19 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutAsserts < Neo::Koan
 
-  # We shall contemplate truth by testing reality, via asserts.(Contemplaremos a verdade testando a realidade, via afirmações.)
+  # We shall contemplate truth by testing reality, via asserts.
   def test_assert_truth
-    assert false                # This should be true(isso deveria ser verdade)
+    assert false                # This should be true
   end
 
-  # Enlightenment may be more easily achieved with appropriate(A iluminação pode ser mais facilmente alcançada com)
+  # Enlightenment may be more easily achieved with appropriate
   # messages.
   def test_assert_with_message
     assert false, "This should be true -- Please fix this"
   end
 
-  # To understand reality, we must compare our expectations against(Para entender a realidade, devemos comparar nossas expectativas com)
-  # reality.(realidade)
+  # To understand reality, we must compare our expectations against
+  # reality.
   def test_assert_equality
     expected_value = __
     actual_value = 1 + 1
