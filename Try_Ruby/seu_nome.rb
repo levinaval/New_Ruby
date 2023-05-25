@@ -1,4 +1,4 @@
-class new
+class Reverse
 
   def seu_nome
 
@@ -13,3 +13,9 @@ class new
   end
 
 end
+
+name = Reverse.new
+
+puts name.seu_nome
+puts name.reverter_seu_nome
+
