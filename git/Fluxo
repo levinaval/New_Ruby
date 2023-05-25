@@ -11,6 +11,8 @@ git push --force origin master
 Fluxo do git para puxar o código do repositório
 git pull origin master
 
+git commit -a -m "Mensagem descritiva" --amend (Para fazer uma correção no arquivo sem almentar o número de commit)
+
 INSTALAÇÃO DO FFAKER
 https://github.com/ffaker/ffaker
 
