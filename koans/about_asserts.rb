@@ -14,7 +14,7 @@ class AboutAsserts < Neo::Koan
   # Enlightenment may be more easily achieved with appropriate messages.
   # (A iluminação pode ser mais facilmente alcançada com mensagens.)
   def test_assert_with_message
-    assert false, "This should be true -- Please fix this"
+    assert true, "This should be true -- Please fix this"
   end
 
   # To understand reality, we must compare our expectations against reality.
