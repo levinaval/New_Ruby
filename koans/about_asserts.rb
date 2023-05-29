@@ -29,7 +29,7 @@ class AboutAsserts < Neo::Koan
   # Some ways of asserting equality are better than others.
   # (Algumas formas de afirmar a igualdade são melhores do que outras.)
   def test_a_better_way_of_asserting_equality
-    expected_value = __
+    expected_value = 2
     actual_value = 1 + 1
 
     assert_equal expected_value, actual_value
