@@ -20,7 +20,7 @@ class AboutAsserts < Neo::Koan
   # To understand reality, we must compare our expectations against reality.
   # (Para entender a realidade, devemos comparar nossas expectativas com a realidade)
   def test_assert_equality
-    expected_value = __
+    expected_value = 2
     actual_value = 1 + 1
 
     assert expected_value == actual_value
