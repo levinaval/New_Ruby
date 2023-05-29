@@ -38,6 +38,6 @@ class AboutAsserts < Neo::Koan
   # Sometimes we will ask you to fill in the values
   # (Às vezes, pediremos que você preencha os valores)
   def test_fill_in_values
-    assert_equal __, 1 + 1
+    assert_equal 2, 1 + 1
   end
 end
