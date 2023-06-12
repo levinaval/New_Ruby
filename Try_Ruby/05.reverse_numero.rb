@@ -7,7 +7,7 @@ class Reverter
     n = gets.chomp.to_s
    puts
    puts "Invertido"
-   puts n.to_s.reverse
+   puts n.reverse
   end
 end
 
