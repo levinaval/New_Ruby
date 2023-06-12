@@ -3,9 +3,9 @@
 #end
 
 def repeticao
-
-  puts "Welcome"
- 
+ 3.times do
+  puts "Welcome "
  end
+end
  
  repeticao
