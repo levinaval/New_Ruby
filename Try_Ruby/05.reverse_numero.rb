@@ -14,13 +14,3 @@ end
 rev = Reverter.new
 
 rev.reverter_valor 
-
-#concatenação
-
-print "Um nome sendo concatenado. "
-
-s = "Levi "
-
-s << "Silva"
-
-puts s 
