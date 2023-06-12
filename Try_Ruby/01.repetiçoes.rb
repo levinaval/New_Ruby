@@ -5,7 +5,7 @@
 class Repeticao
   def multiplicao
     3.times do
-      puts "Levi"
+      print "Levi "
     end
   end
 end
