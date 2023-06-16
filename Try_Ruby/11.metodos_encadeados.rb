@@ -1,4 +1,6 @@
-# Combinando métodos desta forma é chamado de encadeamento de métodos..
+# Combinando os métodos (lines.reverse.join) desta forma é chamado de encadeamento de métodos.
+
+# Encadeamento de métodos permite que você faça muito mais. Quebrar um poema, inverte-lo, remonta-lo:
 
 torrada = "Minha torrada voou da minha mão
   E minha torrada se foi para a lua.
