@@ -1,19 +1,19 @@
-# Buscando o conhecimento para fazer funcionar da forma correta.
+# O método gsub é abreviação para substituição global. Ele substitui todas as ocorrências de “torrada” para “manga”.
 
 def poema
-  torrada = ["Minha torrada voou da minha mão
+  torrada = "Minha torrada voou da minha mão
   E minha torrada se foi para a lua.
   Mas quando eu vejo isso na televisão,
   Colocando nossa bandeira no cometa Halley,
   Mais ainda eu quero come-la.
   
-  Isto rima ?"]    
+  Isto rima ?"    
 
-  manga = ["Minha manga voou da minha mão
+  manga = "Minha manga voou da minha mão
   E minha manga se foi para a lua.
   Mas quando eu vejo isso na televisão,
   Colocando nossa bandeira no cometa Halley,
-  Mais ainda eu quero come-la."]
+  Mais ainda eu quero come-la."
 end  
 
-  puts poema.gsub("torrada", "manga")
+  puts poema.gsub("manga", "torrada")
