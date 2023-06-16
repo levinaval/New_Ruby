@@ -2,7 +2,7 @@
 
 # Lines decide a forma como a string será dividida e converte isso em um Array.
 
-# Comando para efetuar inversão entre a primeira e a última linha do texto.
+# Este comando efetuar inversão entre a primeira e a última linha do texto.
 
 torrada = "Minha torrada voou da minha mão
   E minha torrada se foi para a lua.
