@@ -1,3 +1,7 @@
+# Duas coisas aconteceram. Você tornou o poema em uma lista usando o método lines.
+
+# Lines decide a forma como a string será dividida e converte isso em um Array.
+
 # Comando para efetuar inversão entre a primeira e a última linha do texto.
 
 torrada = "Minha torrada voou da minha mão
