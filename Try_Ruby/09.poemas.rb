@@ -1,3 +1,5 @@
+# Buscando o conhecimento para fazer funcionar da forma correta.
+
 def poema
   torrada = ["Minha torrada voou da minha mão
   E minha torrada se foi para a lua.
