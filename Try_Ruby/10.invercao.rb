@@ -12,4 +12,6 @@ torrada = "Minha torrada voou da minha mão
   
   Isto rima ?"
 
-puts torrada.lines.reverse
+puts torrada.swapcase#lines.reverse
+
+poema.downcase ou poema.swapcase
