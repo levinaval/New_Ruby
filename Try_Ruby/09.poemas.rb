@@ -19,38 +19,40 @@ class Substituicao
 end
 
 subt = Substituicao.new 
-#puts subt.poema.gsub("torrada", "manga")
+puts subt.poema.gsub("torrada", "manga")
 
 #or
 
-puts
-puts "Escolha um poema. 1 ou 2?"
-escolha = gets.chomp.to_i
 
-#class Opcao
-  #def poema
+class Opcao
+  def poema
+
+   puts
+   puts "Escolha um poema. 1 ou 2?"
+   escolha = gets.chomp.to_i
+   
     if escolha == 1
-     puts torrada = "Minha torrada voou da minha mão
-     E minha torrada se foi para a lua.
-     Mas quando eu vejo isso na televisão,
-     Colocando nossa bandeira no cometa Halley,
-     Mais ainda eu quero come-la.
-     
-     Isto rima ?"
+    puts torrada = "Minha torrada voou da minha mão
+    E minha torrada se foi para a lua.
+    Mas quando eu vejo isso na televisão,
+    Colocando nossa bandeira no cometa Halley,
+    Mais ainda eu quero come-la.
+    
+    Isto rima ?"
 
-     elsif escolha == 2 
+    elsif escolha == 2 
       puts manga = "Minha manga voou da minha mão
       E minha manga se foi para a lua.
       Mas quando eu vejo isso na televisão,
       Colocando nossa bandeira no cometa Halley,
       Mais ainda eu quero come-la."
-     else
+    else
       puts "não tem esta opção!"
     end
-  #end
-#end
+  end
+end
 
-#op = Opcao.new 
-#op.poema
-#poema
+op = Opcao.new 
+op.poema
+
 
