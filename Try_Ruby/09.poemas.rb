@@ -28,7 +28,7 @@ puts "Escolha um poema. 1 ou 2?"
 escolha = gets.chomp.to_i
 
 #class Opcao
-  def poema
+  #def poema
     if escolha == 1
      puts torrada = "Minha torrada voou da minha mão
      E minha torrada se foi para a lua.
@@ -47,9 +47,10 @@ escolha = gets.chomp.to_i
      else
       puts "não tem esta opção!"
     end
-  end
+  #end
 #end
 
 #op = Opcao.new 
 #op.poema
-poema
+#poema
+
