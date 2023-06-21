@@ -1,3 +1,6 @@
-hash = {esplendido:"Uma obra prima!"}
+livros["Até o Fim"]  = :lixo
+livros["Cores Vivas"] = :mediocre
 
-puts hash
+#puts livros
+
+puts livros.length
