@@ -19,10 +19,15 @@ class Substituicao
 end
 
 subt = Substituicao.new 
-puts subt.poema.gsub("torrada", "manga")
+puts subt.poema.gsub("manga", "torrada")
 
 #or
 
+string = "Olá, mundo!"
+novo_string = string.gsub("mundo", "amigo")
+puts novo_string
+
+# or
 
 class Opcao
   def poema
