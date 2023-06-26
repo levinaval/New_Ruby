@@ -1,10 +1,8 @@
-#livros["Até o Fim"]  = :lixo
-#livros["Cores Vivas"] = :mediocre
+print "Escreva um título de livro: "
+titulo = gets.chomp
 
-#puts livros
+livros = {}
+livros["O Arco-Íris da Gravidade"] = :esplendido
 
-#puts livros.length
-
-:esplendido = "uma obra prima"
-
-#puts :esplendido
+puts
+puts "Este livro é #{livros[titulo]}"
