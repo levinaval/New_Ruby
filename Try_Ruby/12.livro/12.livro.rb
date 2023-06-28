@@ -9,3 +9,5 @@ titulo = gets.chomp
 
 puts
 puts "Este livro é #{livros[titulo]}" if livros.key?(titulo)
+
+puts livros.keys
