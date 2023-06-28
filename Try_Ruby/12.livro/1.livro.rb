@@ -1,3 +1,6 @@
+# Você criou um hash vazio. Um hash é como um array, porém cada um dos seus elementos tem um nome.
+# Nós iremos adicionar algumas análises de livros ao nosso hash.
+
 livros = {
   "O Arco-Íris da Gravidade" => :esplendido_uma_obra_prima,
   "Outro Livro" => :maravilhoso,
