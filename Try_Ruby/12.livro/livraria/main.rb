@@ -9,7 +9,7 @@ titulo = gets.chomp
 autor = Autor.get_autor(titulo)
 titulo = Titulo.get_titulo(titulo)
 valor = Valor.get_valor(titulo)
-quantidade = QuantidadeNoEstoque.get_quantidade
+quantidade = QuantidadeNoEstoque.get_quantidade(titulo)
 
 puts "Autor: #{autor}"
 puts "Título: #{titulo}"

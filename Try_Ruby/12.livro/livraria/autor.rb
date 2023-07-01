@@ -5,7 +5,7 @@ class Autor
     "Dom Quixote" => "Miguel de Cervantes"
   }
 
-  def self.get_titulo(titulo)
+  def self.get_autor(titulo)
     AUTORES[titulo]
   end
 end

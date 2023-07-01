@@ -1,7 +1,7 @@
 class QuantidadeNoEstoque
   QUANTIDADES = {
-    "Em Busca do Tempo Perdido" => 10
-    "Ulysses" => 15
+    "Em Busca do Tempo Perdido" => 10,
+    "Ulysses" => 15,
     "Dom Quixote" => 8
   }
 
