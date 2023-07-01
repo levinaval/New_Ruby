@@ -1,16 +1,23 @@
 # Você criou um hash vazio. Um hash é como um array, porém cada um dos seus elementos tem um nome.
-# Nós iremos adicionar algumas análises de livros ao nosso hash.
+# Nós iremos adicionar algumas análises de livro ao nosso hash.
 
-livros = {
-  "O Arco-Íris da Gravidade" => :esplendido_uma_obra_prima,
-  "Outro Livro" => :maravilhoso,
-  "Mais um Livro" => :fantastico
-}
+class Livro
+  def initialize
+    @titulo = {
+      "Em Busca do Tempo Perdido" => :Marcel_Proust,
+      "Ulysses" => :James_Joyce,
+      "Dom Quixote" => :Miguel_de_Cervantes,
+    }
+  end
+  def pedir_titulo
+    print "Escreva um título de livro: "
+    titulo = gets.chomp
 
-print "Escreva um título de livro: "
-titulo = gets.chomp
+    puts
+    puts "Este livro foi escrito por #{@titulo[titulo]}" if @titulo.key?(titulo)
+  end
+end
 
-puts
-puts "Este livro é #{livros[titulo]}" if livros.key?(titulo)
+livro = Livro.new
 
-puts livros.keys
+livro.pedir_titulo
