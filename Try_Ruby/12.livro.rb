@@ -19,4 +19,3 @@ class Livro
 end
 
 livro = Livro.new
-
