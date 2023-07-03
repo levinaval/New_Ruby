@@ -19,3 +19,4 @@ class Livro
 end
 
 livro = Livro.new
+livro.pedir_titulo
