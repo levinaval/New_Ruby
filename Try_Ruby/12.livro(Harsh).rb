@@ -17,6 +17,3 @@ class Livro
     puts "Este livro foi escrito por #{@titulo[titulo]}" if @titulo.key?(titulo)
   end
 end
-
-livro = Livro.new
-livro.pedir_titulo
