@@ -9,6 +9,7 @@ class Livro
       "Dom Quixote" => :Miguel_de_Cervantes,
     }
   end
+  
   def pedir_titulo
     print "Escreva um título de livro: "
     titulo = gets.chomp
@@ -17,3 +18,6 @@ class Livro
     puts "Este livro foi escrito por #{@titulo[titulo]}" if @titulo.key?(titulo)
   end
 end
+
+livro = Livro.new
+livro.pedir_titulo
