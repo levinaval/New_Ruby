@@ -35,7 +35,7 @@ class AboutConstants < Neo::Koan
   end
 
   def test_nested_classes_inherit_constants_from_enclosing_classes
-    assert_equal __, Animal::NestedAnimal.new.legs_in_nested_animal
+    assert_equal 4, Animal::NestedAnimal.new.legs_in_nested_animal
   end
 
   # ------------------------------------------------------------------
@@ -47,7 +47,7 @@ class AboutConstants < Neo::Koan
   end
 
   def test_subclasses_inherit_constants_from_parent_classes
-    assert_equal __, Reptile.new.legs_in_reptile
+    assert_equal 4, Reptile.new.legs_in_reptile
   end
 
   # ------------------------------------------------------------------
