@@ -6,6 +6,18 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 #   code ...
 # end
 
+class DiceSet
+  attr_reader :values
+
+  def initialize
+    @values = []
+  end
+
+  def roll(quantidade_rolagens)
+    @values = Array.new(quantidade_rolagens) { rand(1..6) }
+  end
+end
+
 class AboutDiceProject < Neo::Koan
   def test_can_create_a_dice_set
     dice = DiceSet.new
@@ -13,7 +25,7 @@ class AboutDiceProject < Neo::Koan
   end
 
   def test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6
-    dice = DiceSet.new
+    dice = AboutDiceProject::DiceSet.new
 
     dice.roll(5)
     assert dice.values.is_a?(Array), "should be an array"
