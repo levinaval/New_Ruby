@@ -25,7 +25,7 @@ class AboutDiceProject < Neo::Koan
   end
 
   def test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6
-    dice = AboutDiceProject::DiceSet.new
+    dice = DiceSet.new
 
     dice.roll(5)
     assert dice.values.is_a?(Array), "should be an array"
