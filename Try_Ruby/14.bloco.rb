@@ -11,3 +11,18 @@ end
 repetir = Repetir.new
 
 repetir.tempo
+
+# continuação.
+
+# Aqui, o método .times (significa vezes) envia o valor para a variável |vez| . Porém, note que a variável vez só é conhecida dentro do bloco.
+
+class Enumera
+  def contagem
+    5.times { |vez|
+      puts vez
+    }    
+  end
+end
+
+enu = Enumera.new
+enu.contagem
