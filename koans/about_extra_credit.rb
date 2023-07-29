@@ -1,12 +1,3 @@
-# EXTRA CREDIT:
-#
-# Create a program that will play the Greed Game.
-# Rules for the game are in GREED_RULES.TXT.
-#
-# You already have a DiceSet class and score function you can use.
-# Write a player class and a Game class to complete the project.  This
-# is a free form assignment, so approach it however you desire.
-
 class DiceSet
   attr_reader :values
 
@@ -19,11 +10,14 @@ class DiceSet
   end
 end
 
-class player
+class Player
   attr_reader :name, :score
 
-  def initialize
-  @name, @score, @score_this_turn, @turn_in_progress = name, 0, 0, false  
+  def initialize(name)
+    @name = name
+    @score = 0
+    @score_this_turn = 0
+    @turn_in_progress = false
   end
 
   def roll_dice(dice_set)
@@ -43,7 +37,7 @@ class player
   def score_this_turn(values)
     score = 0
 
-    count+count_of_values = value.group_by(&:itself).transform_values(&:count)
+    count_of_values = values.group_by(&:itself).transform_values(&:count)
 
     count_of_values.each do |value, count|
       if count >= 3
@@ -59,29 +53,33 @@ class player
   end
 
   def end_turn
-    @score += @score_this_turn if @turn_in_progress 
-    @score_this_turn, @turn_in_progress = 0, false
+    @score += @score_this_turn if @turn_in_progress
+    @score_this_turn = 0
+    @turn_in_progress = false
   end
 end
 
 class Game
   WINNING_SCORE = 3000
 
-  def initialize(player_name)
-    @players, @dice_set, @current_player, @final_round = player_name.map { |name| player.new(name) }, DiceSet.new, @players.first, false
+  def initialize(player_names)
+    @players = player_names.map { |name| Player.new(name) }
+    @dice_set = DiceSet.new
+    @current_player_index = 0
+    @final_round = false
   end
 
   def play_game
     until @final_round
       puts "\n\n#{current_player.name}'s turn! Press Enter to roll the dice."
-      gets.chomp 
+      gets.chomp
 
       values = current_player.roll_dice(@dice_set)
       print_roll(values)
 
       if current_player.score_this_turn(values) == 0
         puts "#{current_player.name} scored 0 this turn and lost all accumulated points."
-        @current_player = next_player
+        @current_player_index = next_player_index
         next
       end
 
@@ -101,7 +99,7 @@ class Game
 
       if input == 'end'
         current_player.end_turn
-        @current_player = next_player
+        @current_player_index = next_player_index
       end
     end
 
@@ -127,19 +125,24 @@ class Game
     winner = @players.max_by(&:score)
     puts "#{winner.name} wins with a score of #{winner.score} points!"
   end
+
   private
 
   def current_player
-    @current_player
+    @players[@current_player_index]
   end
 
-  def next_player
-    index = @players.index(@current_player)
-    next_index = (index + 1) % @players.size
-    @players[next_index]
+  def next_player_index
+    (@current_player_index + 1) % @players.size
   end
 
   def print_roll(values)
     puts "\n#{current_player.name} rolled: #{values.join(', ')}"
   end
 end
+
+# Exemplo de como jogar o jogo:
+# Coloque os nomes dos jogadores abaixo
+player_names = ["Player 1", "Player 2", "Player 3"]
+game = Game.new(player_names)
+game.play_game
