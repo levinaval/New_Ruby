@@ -6,3 +6,11 @@ Ctrl + ] - identearuta para a direita.
 Ctrl + Q - Fechar o Vs Code.
 Ctrl + E - Abre arquivos abertos anteriormente.
 Ctrl + R - Abre pastas abertas anteriormente.
+Ctrl + O - Abre pastas de arquivos. 
+Ctrl + F - Abre uma janela de localizador.
+Ctrl + H - Abre uma janela de localizador e substituir.
+Ctrl + J - Abre o terminal.
+Ctrl + L - Seleciona a linha no qual o cursor esta.
+Ctrl + Z - Apaga a última execução.
+Ctrl + B - Abre  e fecha o explorador.
+Ctrl + N - Abre uma janela nova.
