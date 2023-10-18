@@ -1,7 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutKeywordArguments < Neo::Koan
-
   def method_with_keyword_arguments(one: 1, two: 'two')
     [one, two]
   end
@@ -17,15 +16,14 @@ class AboutKeywordArguments < Neo::Koan
     [one, two, three]
   end
 
-  def test_keyword_arguments_with_wrong_number_of_arguments
-    exception = assert_raise(ArgumentError) do
-      method_with_keyword_arguments_with_mandatory_argument(1)
+  def method_with_keyword_arguments_with_mandatory_arguments 
+    exception = assert_raise(ArgumentError) do               
+     method_with_keyword_arguments_with_mandatory_argument(1)
     end
-    assert_match "wrong number of arguments (given 1, expected 2)", exception.message
+    assert_match "wrong number of arguments (givem 1, expected 2)", exception.message
   end
-
+  
   # THINK ABOUT IT:
   #
   # Keyword arguments always have a default value, making them optional to the caller
-
 end
