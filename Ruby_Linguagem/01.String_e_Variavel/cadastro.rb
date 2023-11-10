@@ -1,5 +1,5 @@
 puts "Cadastro de pessoa física"
-print "Nome:"
+print "Primeiro nome:"
 n = gets.chomp
 
 n1 =
