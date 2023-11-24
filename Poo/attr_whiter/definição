@@ -1,0 +1,1 @@
+# O attr_writer só permite que escreva os atributos, mas não possa lê-los.
