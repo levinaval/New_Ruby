@@ -9,7 +9,7 @@ class SnackMenu
   end
 end
 
-snack_menu = SnackMenu.new("sopa", "cachorro_quente", "amburgue", "batata_frita", "filer_parmagiana", "pastel")
+snack_menu = SnackMenu.new("sopa", "cachorro_quente", "hambúrguer", "batata_frita", "file_parmegiana", "pastel")
 
 class DrinksMenu
   def initialize(opi1, opi2, opi3, opi4)
@@ -137,7 +137,7 @@ puts escolha1(decisao3)
  
 decisao4 = gets.chomp
 
-def inclusao1(decisao4, snack_menu, menu_de_bebidas, retirada, entregar)
+def inclusao1(decisao4, snack_menu, menu_de_bebidas)
  if decisao4 == "lanche"
     puts
     puts snack_menu.menu1
@@ -162,7 +162,7 @@ def inclusao1(decisao4, snack_menu, menu_de_bebidas, retirada, entregar)
  end
 end
 
-puts inclusao1(decisao4, snack_menu, menu_de_bebidas, retirada, entregar)
+puts inclusao1(decisao4, snack_menu, menu_de_bebidas)
 
 novo_pedido1 = []
 novo_pedido1 = gets.chomp
@@ -239,19 +239,19 @@ end
 inclusao = InclusaoDePedido.new(novo_pedido1, novo_pedido2)
 puts inclusao.pedidos_incluidos
 pedido.mostrar_carrinho_de_pedidos
-#
-#class PedidoFinalizado
-#  def initialize(pedido, inclusao)
-#    @pedido = pedido
-#    @inclusao = inclusao
-#  end
-#
-#  def mostrar_carrinho_de_pedidos2
-#    puts "Pedido finalizado!"
-#    puts "#{@pedido}"
-#    puts "#{@inclusao}"
-#  end
-#end
-#
-#carrinho = PedidoFinalizado.new(pedido, inclusao)
-#puts carrinho.mostrar_carrinho_de_pedidos2
+
+class PedidoFinalizado
+  def initialize(pedido, inclusao)
+    @pedido = pedido
+    @inclusao = inclusao
+  end
+
+  def mostrar_carrinho_de_pedidos2
+    puts "Pedido finalizado!"
+    puts "#{@pedido}"
+    puts "#{@inclusao}"
+  end
+end
+
+carrinho = PedidoFinalizado.new(pedido, inclusao)
+puts carrinho.mostrar_carrinho_de_pedidos2
