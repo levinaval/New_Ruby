@@ -1,6 +1,6 @@
 class SnackMenu
-  def initialize(poi1, opi2, opi3, opi4, opi5, opi6)
-   @poi1, @poi2, @poi3, @poi4, @poi5, @poi6 = poi1, poi2, poi3, poi4, poi5, poi6 
+  def initialize(poi1, poi2, opi3, opi4, opi5, opi6)
+   @poi1, @poi2, @poi3, @poi4, @poi5, @poi6 = poi1, poi2, opi3, opi4, opi5, opi6 
   end
 
   def menu1
@@ -9,4 +9,6 @@ class SnackMenu
   end
 end
 
-snack_menu = SnackMenu.new("Sopa", "Cachorro_Quente", "Hambúrquer", "Batata_Frita", "File_Parmegiana", "Pastel",)
+snack_menu = SnackMenu.new("1 - Sopa", "2 - Cachorro_Quente", "3 - Hambúrquer", "4 - Batata_Frita", "5 - File_Parmegiana", "6 - Pastel",)
+
+puts snack_menu.menu1
