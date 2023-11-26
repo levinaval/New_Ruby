@@ -34,11 +34,11 @@ order_inclusion = OrderInclusion.new(@new_order1, @new_order2)
 
 puts "Olá! Bem vindo a Lanchonete Delícia."
 puts
-print "Faça o seu pedido: 1 - Lanche 2 - Bebida "
+print "Faça o seu pedido (1 - Lanche) (2 - Bebida): "
 escolha = gets.chomp.to_i
 
 
-def cliente(escolha)
+def cliente(escolha, snack_menu, drinks_menu)
   if escolha == 1
     puts
     puts snack_menu.menu1
@@ -49,3 +49,5 @@ def cliente(escolha)
       puts "Opção não valida!"
  end
 end 
+
+puts cliente(escolha, snack_menu, drinks_menu)
