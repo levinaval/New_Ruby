@@ -10,7 +10,6 @@ puts "O sendudo: "
 
   def calcular
     subt = @x - @y
-    puts "Resultado: "
-    puts subt
+    puts "O resultado da Subtração é #{subt}: "
   end
  end

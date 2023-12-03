@@ -9,8 +9,7 @@ puts "O sendudo: "
   end
 
   def calcular
-    mult = @x, @y
-    puts "Resultado: "
-    puts mult
+    mult = @x * @y
+    puts "O resultado da Multiplicação é: #{mult}"
   end
  end

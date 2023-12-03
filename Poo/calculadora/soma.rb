@@ -5,12 +5,11 @@ puts "O sendudo: "
 
  class Soma
   def initialize(x, y)
-    @x, @y =x, y
+    @x, @y = x, y
   end
 
   def calcular
     soma = @x + @y
-    puts "Resultado: "
-    puts soma
+    puts "O resultado da Soma é: #{soma}"
   end
  end
