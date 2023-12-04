@@ -1,0 +1,30 @@
+Objetivo: Criar uma escola em que tenham duas turmas, e nas turmas precisam ter 10 alunos cada, e um professor responsável em cada turma.
+
+2. Precisamos criar uma classe Pessoa, onde professor e aluno herdarão da classe Pessoa.
+2.1 Pessoa precisa ter os atributos nome e idade
+2.2 Professor precisa ter os atributos disciplina
+2.3 Aluno precisa ter os atributos matricula
+
+3 Criar uma classe Turma terá um atributo nome da turma que tenha 10 alunos e um professor
+3.1 A classe Turma terá um método de apresentação que irá mostrar o professor responsável e sua disciplina,
+mostrará o nome dos alunos e sua matrícula.
+
+Saída - Turma:
+
+Turma A
+Professor Diego - Disciplina Programação
+aluno 1 - Levi - matricula 2202
+aluno 2 - Alyson - matricula 2203
+...
+...
+...
+
+4 Criar a classe Escola que tenha um nome e tenha duas turmas
+4.1 Criar um método que calcule o número de alunos
+4.2 Criar um método que apresentará as duas turmas com seus respectivos nomes e quantidade de alunos.
+
+Saída - Escola:
+
+Escola de Programação
+Turma A - 10 alunos
+Turma B - 10 alunos
