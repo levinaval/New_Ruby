@@ -1,0 +1,21 @@
+É um paradigma de progrmação criado para lidar com softwares prandes e complexos. 
+
+pilares do Poo
+
+Abstração - Ação de Abstrair uma entidade do mundo real e transformá-la em uma classe.
+
+Encapsulamento - Ato de dividir um progrma em viversas parte tornando-o flexível, fácil de modificar e incluir novas funcionalidades.
+
+Herança - Habilidade de criar uma classe com características de outra existente. A herança promove o reuso e reaproveitamento de código.
+
+Poliformismo - Capacidade de utilizar um método de diferentes formas para diferentes Objetos.
+
+É um conceito fundamental em POO para obter comportamentos
+diferentes entre objetos de tipos variados usando-se a mesma interface
+
+Com sobrecarga de método, poderíamos ter várias implementações com a
+mesma assinatura cujo comportamento variasse de acordo com o parâmetro
+
+"require" - Serve para carregar arquivos de uma gem e assim poder escrever códigos com fumcionaliddades deta biblioteca.
+
+ Com ele também é possível carregar arquivos ruby que foram escritos por você. 
