@@ -18,4 +18,22 @@ def raiz(n)
   return Math.sqrt(n)
 end
 
- 
+ #Função para retornar o valor de Pi.
+ def retorna_pi()
+   return Math::PI
+ end
+
+ #Função para calcular o seno de um ângulo em radianos.
+ def seno_radianos(an)
+   return Math.sin(an)
+ end
+
+ #Função para calcular o cosseno de um ângulo em radianos.
+ def cosseno_radianos(an)
+   return Math.cos(an)
+ end
+
+ #Função para calcular a tangente de um ângulo em radiano.
+ def tangente_radiano(an)
+   return Math.tan(an)
+ end
