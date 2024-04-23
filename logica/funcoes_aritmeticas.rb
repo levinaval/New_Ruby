@@ -4,6 +4,16 @@ def valor_absoluto(n)
 end
 
 puts "Valor absoluto de -5: #{valor_absoluto(-5)}"
+
+def absoluto(numero)
+  if numero < 0
+    return -numero
+  else
+    return numero
+  end
+end
+
+puts "Absoluto: #{absoluto(-7)}"
 puts
 
 #Função para calcular a exponenciação de um elevado a uma potência.
@@ -60,3 +70,4 @@ puts
  end
 
  puts "Tangente de 45 graus em radianos: #{tangente_radiano(Math::PI / 4)}"
+
