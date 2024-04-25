@@ -24,6 +24,14 @@ def exponenciacao(base, expoente)
   return base ** expoente
 end
 
+def exponenciacao(base, potencia)
+  resultado = 1
+
+  potencia.times do
+    resultado *= base
+  end
+end
+
 puts "Exponenciação de 2 elevado a 3: #{exponenciacao(2, 3)}"
 puts
 --------------------------------------------------------------------

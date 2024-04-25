@@ -1,13 +1,11 @@
-print "Escreva um número: "
-n = gets.chomp.to_i
+def exponenciacao(base, potencia)
+  resultado = 1
 
-def absoluto(n)
-  if n < 0
-    return -n
-  else
-    return n
+  potencia.times do
+    resultado *= base
   end
+
+  return resultado
 end
 
-puts
-puts "O valor absoluto é: #{absoluto(n)}"
+puts exponenciacao(4, 5)
