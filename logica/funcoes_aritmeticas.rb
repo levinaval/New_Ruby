@@ -45,6 +45,12 @@ end
 
 puts "Valor inteiro de 3.14: #{valor_inteiro(3.14)}"
 puts
+
+def valor_inteiro(n)
+  return n.floor
+end
+
+
 --------------------------------------------------------------------
 #Função para calcular a raiz quadrada de um número.
 def raiz(n)
