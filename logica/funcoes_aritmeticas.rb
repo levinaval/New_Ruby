@@ -50,7 +50,7 @@ def valor_inteiro(n)
   return n.floor
 end
 
-
+puts valor_inteiro(5, 7)
 --------------------------------------------------------------------
 #Função para calcular a raiz quadrada de um número.
 def raiz(n)
