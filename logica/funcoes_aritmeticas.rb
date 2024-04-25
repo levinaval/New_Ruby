@@ -20,8 +20,8 @@ puts "Absoluto: #{absoluto(numero)}"
 puts
 --------------------------------------------------------------------
 #Função para calcular a exponenciação de um elevado a uma potência.
-def exponenciacao(base, expoente)
-  return base ** expoente
+def exponenciacao(base, potencia)
+  return base ** potencia
 end
 
 def exponenciacao(base, potencia)
@@ -34,7 +34,7 @@ def exponenciacao(base, potencia)
   return resultado
 end
 
-puts esponenciacao(3, 4)
+puts exponenciacao(3, 4)
 puts "Exponenciação de 2 elevado a 3: #{exponenciacao(2, 3)}"
 puts
 --------------------------------------------------------------------
