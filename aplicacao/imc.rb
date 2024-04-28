@@ -1,6 +1,6 @@
-class CalculadoraIMC
-  def calcular_imc(peso, altura)
-    imc = peso / (altura ** 2)
+class CalculatorIMC
+  def calculate_imc(weight, height)
+    imc = weight / (height ** 2)
    return imc.round(2) 
   end  
 
@@ -19,16 +19,16 @@ end
 
 puts "Calculadora de IMC"
 print "Por favor, insira seu peso em Kg: "
-peso = gets.chomp.to_f
+weight = gets.chomp.to_f
 
 print "Por favor, insira sua altura em metros: "
-altura = gets.chomp.to_f
+height = gets.chomp.to_f
 
-calculadora = CalculadoraIMC.new
+calculator = CalculatorIMC.new
 
-imc = calculadora.calcular_imc(peso, altura)
+imc = calculator.calculate_imc(weight, height)
 
-interpretacao = calculadora.interpretar_imc(imc)
+interpretation = calculator.interpretar_imc(imc)
 
 puts "/n Seu IMC é: #{imc}"
-puts "Interpretação: #{interpretacao}"
+puts "Interpretação: #{interpretation}"
