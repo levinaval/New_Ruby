@@ -4,7 +4,7 @@ class CalculatorIMC
    return imc.round(2) 
   end  
 
-  def interpretar_imc(imc)
+  def to_interpret_imc(imc)
     if imc < 18.5
       return "Abaixo do peso"
     elsif imc >= 18.5 && imc < 25
@@ -28,7 +28,7 @@ calculator = CalculatorIMC.new
 
 imc = calculator.calculate_imc(weight, height)
 
-interpretation = calculator.interpretar_imc(imc)
+interpretation = calculator.to_interpret_imc(imc)
 
 puts "/n Seu IMC é: #{imc}"
 puts "Interpretação: #{interpretation}"
