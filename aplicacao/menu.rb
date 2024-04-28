@@ -1,5 +1,5 @@
-class Lanchonete
-  MENU_LANCHES = {
+class Cafeteria
+  SNACKS_MENU = {
     "Sopa" => 5.0,
     "Cachorro Quente" => 7.5,
     "Hambúrguer" => 10.0,
@@ -8,7 +8,7 @@ class Lanchonete
     "Pastel" => 6.0
   }.freeze
 
-  MENU_BEBIDAS = {
+  DRINKS_MENU = {
     "Suco" => 4.0,
     "Refrigerante" => 3.5,
     "Água de Coco" => 3.0,
@@ -16,64 +16,64 @@ class Lanchonete
   }.freeze
 
   def initialize
-    @pedido_lanches = []
-    @pedido_bebidas = []
+    @order_snacks = []
+    @order_drinks = []
   end
 
-  def mostrar_menu_lanches
+  def shows_snack_menu
     puts "### MENU DE LANCHES ###"
-    MENU_LANCHES.each_with_index do |(item, preco), index|
-      puts "#{index + 1}. #{item}: R$ #{preco}"
+    SNACKS_MENU.each_with_index do |(item, prece), index|
+      puts "#{index + 1}. #{item}: R$ #{prece}"
     end
   end
 
-  def mostrar_menu_bebidas
+  def shows_drinks_menu
     puts "### MENU DE BEBIDAS ###"
-    MENU_BEBIDAS.each_with_index do |(item, preco), index|
-      puts "#{index + 1}. #{item}: R$ #{preco}"
+    DRINKS_MENU.each_with_index do |(item, prece), index|
+      puts "#{index + 1}. #{item}: R$ #{prece}"
     end
   end
 
-  def fazer_pedido_lanche(numero)
-    item = MENU_LANCHES.keys[numero - 1]
-    @pedido_lanches << item if item
+  def shows_snack_order(number)
+    item = SNACKS_MENU.keys[number - 1]
+    @order_snacks << item if item
   end
 
-  def fazer_pedido_bebida(numero)
-    item = MENU_BEBIDAS.keys[numero - 1]
-    @pedido_bebidas << item if item
+  def order_a_drink(number)
+    item = DRINKS_MENU.keys[number - 1]
+    @order_drinks << item if item
   end
 
-  def mostrar_pedido
+  def show_order
     puts "### PEDIDO ###"
     puts "Lanches:"
-    @pedido_lanches.each { |item| puts "#{item}: R$ #{MENU_LANCHES[item]}" }
+    @order_snacks.each { |item| puts "#{item}: R$ #{SNACKS_MENU[item]}" }
     puts "Bebidas:"
-    @pedido_bebidas.each { |item| puts "#{item}: R$ #{MENU_BEBIDAS[item]}" }
-    total = calcular_total
+    @order_drinks.each { |item| puts "#{item}: R$ #{DRINKS_MENU[item]}" }
+    total = calculate_total
     puts "Total: R$ #{total}"
   end
 
-  def retirar_item_pedido(tipo, indice)
+  def remove_ordered_item(tipo, indice)
     if tipo == :lanche
-      @pedido_lanches.delete_at(indice)
+      @order_snacks.delete_at(indice)
     elsif tipo == :bebida
-      @pedido_bebidas.delete_at(indice)
+      @order_drinks.delete_at(indice)
     end
   end
 
   private
 
-  def calcular_total
-    total_lanches = @pedido_lanches.sum { |item| MENU_LANCHES[item] }
-    total_bebidas = @pedido_bebidas.sum { |item| MENU_BEBIDAS[item] }
+  def calculate_total
+    total_lanches = @order_snacks.sum { |item| SNACKS_MENU[item] }
+    total_bebidas = @order_drinks.sum { |item| DRINKS_MENU[item] }
     total_lanches + total_bebidas
   end
 end
 
-lanchonete = Lanchonete.new
+cafeteria = Cafeteria.new
 
-puts "Olá! Bem-vindo à Lanchonete Web."
+puts "Olá! Bem-vindo à Cafeteria Web."
 
 loop do
   puts "\nO que gostaria de fazer?"
@@ -88,39 +88,39 @@ loop do
 
   case opcao
   when 1
-    lanchonete.mostrar_menu_lanches
+    cafeteria.shows_snack_menu
   when 2
-    lanchonete.mostrar_menu_bebidas
+    cafeteria.shows_drinks_menu
   when 3
     puts "Digite o número do lanche que deseja pedir: "
-    numero_lanche = gets.chomp.to_i
-    lanchonete.fazer_pedido_lanche(numero_lanche)
+    snack_number = gets.chomp.to_i
+    cafeteria.shows_snack_order(snack_number)
     puts "Digite o número da bebida que deseja pedir: "
-    numero_bebida = gets.chomp.to_i
-    lanchonete.fazer_pedido_bebida(numero_bebida)
+    drink_number = gets.chomp.to_i
+    cafeteria.order_a_drink(drink_number)
   when 4
-    lanchonete.mostrar_pedido
+    cafeteria.show_order
   when 5
     puts "\nQual item você deseja retirar do pedido?"
     puts "1. Lanche"
     puts "2. Bebida"
     print "Escolha uma opção: "
-    tipo_retirada = gets.chomp.to_i
-    if tipo_retirada == 1
-      lanchonete.mostrar_menu_lanches
+    withdrawal_type = gets.chomp.to_i
+    if withdrawal_type == 1
+      cafeteria.shows_snack_menu
       print "Digite o número do lanche que deseja retirar: "
-      numero_item = gets.chomp.to_i
-      lanchonete.retirar_item_pedido(:lanche, numero_item - 1)
-    elsif tipo_retirada == 2
-      lanchonete.mostrar_menu_bebidas
+      item_number = gets.chomp.to_i
+      cafeteria.remove_ordered_item(:lanche, item_number - 1)
+    elsif withdrawal_type == 2
+      cafeteria.shows_drinks_menu
       print "Digite o número da bebida que deseja retirar: "
-      numero_item = gets.chomp.to_i
-      lanchonete.retirar_item_pedido(:bebida, numero_item - 1)
+      item_number = gets.chomp.to_i
+      cafeteria.remove_ordered_item(:bebida, item_number - 1)
     else
       puts "Opção inválida. Por favor, escolha uma opção válida."
     end
   when 6
-    puts "Obrigado por visitar a Lanchonete Web. Volte sempre!"
+    puts "Obrigado por visitar a Cafeteria Web. Volte sempre!"
     break
   else
     puts "Opção inválida. Por favor, escolha uma opção válida."
