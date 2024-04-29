@@ -1,5 +1,6 @@
 class Transaction
   attr_reader :description, :amount
+
   def initialize(description, amount)
     @description, @amount = description, amount
   end
@@ -11,20 +12,32 @@ end
 
 class FinancialManager
   def initialize
-    @Transaction = []
+    @transactions = []
   end
 
-  def add_transactions(transaction)
-    @transaction << transaction
+  def add_transaction(transaction)
+    @transactions << transaction
   end
 
-  def display_transaction
+  def display_transactions
     puts "Transações Financeiras:"
-    @transaction.each_with_index do |transaction, index|
+    @transactions.each_with_index do |transaction, index|
       puts "#{index + 1}. #{transaction}"
     end
   end
 end
 
+financial_manager = FinancialManager.new
 
+loop do
+  print "Digite uma descrição para a transação (ou 'sair' para sair):"
+  description = gets.chomp
+  break if description.downcase == 'sair'
+  
+  print "Digite o valor da transação:"
+  amount = gets.to_f
 
+  transaction = Transaction.new(description, amount)
+  financial_manager.add_transaction(transaction)
+  financial_manager.display_transactions
+end
