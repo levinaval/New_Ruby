@@ -2,8 +2,7 @@ class DiaryEntry
   attr_reader :date, :content
 
   def initialize(date, content)
-    @date = date
-    @content = content
+    @date, @content = date, content
   end
 
   def to_s
