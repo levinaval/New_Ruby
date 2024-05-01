@@ -4,7 +4,7 @@ class Book
 attr_reader :title, :author, :genre
 
   def initialize(title, author, genre)
-    @title,@author,@genre = title, author, genre
+    @title, @author, @genre = title, author, genre
   end
 
   def to_s
@@ -32,11 +32,11 @@ end
 book_manager = BookManager.new
 
 loop do
-  puts "Digite o títolo do livro ( 0 para Sair):"
+  puts "Digite o títolo do livro ( ou 'Sair'):"
     title = gets.chomp.to_s.downcase
-    break if title == 0
+    break if title == 'sair'
 
-    puts "Digite o nome so autor:"
+    puts "Digite o nome do autor:"
     author = gets.chomp
 
     puts "Digite o gênero do livro:"
