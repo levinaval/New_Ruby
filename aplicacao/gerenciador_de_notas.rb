@@ -1,3 +1,5 @@
+#Vamos criar um app simples para gerenciar notas.
+
 class Note
   attr_reader :title, :content, :category
 

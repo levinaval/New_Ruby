@@ -1,3 +1,5 @@
+#Vamos criar um app simples salvar as suas receitas
+
 class Recipe
   attr_reader :name, :ingredients, :instructions
   

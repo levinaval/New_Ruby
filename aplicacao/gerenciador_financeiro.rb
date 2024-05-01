@@ -1,3 +1,5 @@
+#Vamos criar um app simples para gerenciar transações financeiras.
+
 class Transaction
   attr_reader :description, :amount
 

@@ -1,3 +1,5 @@
+#Vamos criar um app simples para fazer pedidos.
+
 class Cafeteria
   SNACKS_MENU = {
     "Sopa" => 5.0,

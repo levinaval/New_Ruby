@@ -1,3 +1,5 @@
+#Vamos criar um app simples para gereciar tarefas.
+
 class TodoList
   
   def initialize

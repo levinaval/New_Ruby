@@ -1,3 +1,5 @@
+#Vamos criar um app simples para medir o IMC.
+
 class CalculatorIMC
   def calculate_imc(weight, height)
     imc = weight / (height ** 2)

@@ -1,3 +1,5 @@
+#Vamos criar um app simples para contatos telefonicos.
+
 class Contact
   attr_reader :name, :phone_number, :email
 

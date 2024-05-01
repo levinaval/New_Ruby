@@ -1,3 +1,5 @@
+#Vamos criar um app simples para efetuar cadastros.
+
 puts "Cadastro de pessoa física"
 print "Primeiro nome:"
 n = gets.chomp

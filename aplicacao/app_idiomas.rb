@@ -1,3 +1,5 @@
+#Vamos criar um app simples para a
+
 class AppIdiomas
   attr_accessor :vocabulario
 

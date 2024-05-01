@@ -1,3 +1,5 @@
+#Vamos criar um app simples para gerenciar livros.
+
 class Book
 attr_reader :title, :author, :genre
 

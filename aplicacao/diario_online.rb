@@ -1,3 +1,5 @@
+#Vamos criar um app simples para diarios.
+
 class DiaryEntry
   attr_reader :date, :content
 

@@ -1,3 +1,5 @@
+#Vamos criar um app simples para os usuários podem postar atualizações de status.
+
 class Post
   attr_reader :author, :content
 

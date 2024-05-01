@@ -1,3 +1,5 @@
+#Vamos criar um app simples para registro de treinos.
+
 class Exercise
   attr_reader :name, :duration, :calories_burned
 
