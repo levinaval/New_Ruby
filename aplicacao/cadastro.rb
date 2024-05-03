@@ -6,18 +6,13 @@ name = gets.chomp
 
 information1 = if(n.length < 4 || n.length > 30) then "Quantidade de caracteres abaixo de 4 ou acina de 30!" else "#{n}" end
 
-
-
 print "Idade: "
-i = gets.chomp.to_i
+age = gets.chomp.to_i
 
-n2 =
-if(i <= 4 || i >= 100) then "Idade igual a 0 ou superior a 100 anos!" else "#{i}" end
-
-
+information2 = if(i <= 4 || i >= 100) then "Idade igual a 0 ou superior a 100 anos!" else "#{i}" end
 
 print "Endereço: "
-ed = gets.chomp
+adress = gets.chomp
 
 n3 =
 if(ed.length < 4 || ed.length > 100) then "Quantidade de caracteres abaixo de 4 ou acina de 100" else "#{ed}" end
