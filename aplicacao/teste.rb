@@ -1,11 +1,12 @@
-class Post
+class Blog
   attr_reader :title, :content
+
   def initialize(title, content)
     @title, @content = title, content
   end
 
   def to_s
-    "Título: #{title} Conteúdo:#{content}"
+    "Título: #{title}, Conteúdo: #{content}"
   end
 end
 
@@ -29,7 +30,7 @@ end
 blog = Blog.new
 
 loop do
-  puts "Digite o título da postagem(ou 'Sair'):"
+  puts "Digite o titúlo da postagem(ou 'Sair'):"
   title = gets.chomp
   break if title.downcase == 'sair'
 
@@ -38,5 +39,5 @@ loop do
 
   post = Post.new(title, content)
   blog.add_post(post)
-  blog.display_posts
+  blog.display_posts               
 end
