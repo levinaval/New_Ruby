@@ -1,43 +1,61 @@
-class Blog
-  attr_reader :title, :content
+class Course
+  attr_reader :name, :instructor, :description
 
-  def initialize(title, content)
-    @title, @content = title, content
+  def initialize(name, instructor, description)
+    @name = name
+    @instructor = instructor
+    @description = description
   end
 
   def to_s
-    "Título: #{title}, Conteúdo: #{content}"
+    "#{name} - Instrutor: #{instructor}\nDescrição: #{description}"
   end
 end
 
-class Blog
+class EducationPlatform
   def initialize
-    @posts = []
+    @courses = []
+    @enrolled_courses = []
   end
 
-  def add_post(post)
-    @posts << post
+  def add_course(course)
+    @courses << course
   end
 
-  def display_posts
-  puts "Posts do Blog:"
-    @posts.each_with_index do |post, index|
-      puts "#{index + 1}. #{post}"
+  def display_courses
+    puts "Cursos Disponíveis:"
+    @courses.each_with_index do |course, index|
+      puts "#{index + 1}. #{course}"
+    end
+  end
+
+  def enroll(course_index)
+    @enrolled_courses << @courses[course_index]
+  end
+
+  def display_enrolled_courses
+    puts "Cursos Inscritos:"
+    @enrolled_courses.each do |course|
+      puts course
+      puts "-" * 20
     end
   end
 end
 
-blog = Blog.new
+education_platform = EducationPlatform.new
+
+# Adicione alguns cursos de exemplo
+education_platform.add_course(Course.new("Introdução à Programação", "João Silva", "Aprenda os fundamentos da programação"))
+education_platform.add_course(Course.new("Inglês Básico", "Maria Santos", "Melhore suas habilidades de comunicação em inglês"))
+education_platform.add_course(Course.new("Matemática Financeira", "Pedro Oliveira", "Aprenda a calcular juros, taxas e investimentos"))
 
 loop do
-  puts "Digite o titúlo da postagem(ou 'Sair'):"
-  title = gets.chomp
-  break if title.downcase == 'sair'
-
-  puts "Digite o conteúdo da postagem:"
-  content = gets.chomp
-
-  post = Post.new(title, content)
-  blog.add_post(post)
-  blog.display_posts               
+  puts "Digite o número do curso para se inscrever (ou 'sair' para sair):"
+  education_platform.display_courses
+  input = gets.chomp
+  break if input.downcase == 'sair'
+  
+  course_index = input.to_i - 1
+  education_platform.enroll(course_index)
+  education_platform.display_enrolled_courses
 end
