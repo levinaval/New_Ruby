@@ -8,7 +8,7 @@ class Post
   end
 
   def to_s
-    "#{title} #{content}"
+    "Título:#{title}, Conteúdo#{content}"
   end
 end
 
@@ -32,7 +32,7 @@ end
 blog = Blog.new
 
 loop do
-  puts "Digite o titulo da postagem (ou 'Sair'):"
+  puts "Digite o titulo da postagem(ou 'Sair'):"
   title = gets.chomp
   break if title.downcase == 'sair'
 
