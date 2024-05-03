@@ -2,10 +2,9 @@
 
 puts "Cadastro de pessoa física"
 print "Primeiro nome:"
-n = gets.chomp
+name = gets.chomp
 
-n1 =
-if(n.length < 4 || n.length > 30) then "Quantidade de caracteres abaixo de 4 ou acina de 30!" else "#{n}" end
+information1 = if(n.length < 4 || n.length > 30) then "Quantidade de caracteres abaixo de 4 ou acina de 30!" else "#{n}" end
 
 
 
