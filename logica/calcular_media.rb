@@ -1,4 +1,4 @@
-def calcular_media(n1, n2, n3)
+def calculate_average(n1, n2, n3)
   media = (n1 + n2 + n3) / 3.0
   puts "A média dos números é : #{media}"
 end
@@ -14,5 +14,5 @@ loop do
   print "terceiro: "
   n3 = gets.chomp.to_f
   
-  calcular_media(n1, n2, n3)  
+  calculate_average(n1, n2, n3)  
 end
