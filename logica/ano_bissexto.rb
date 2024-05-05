@@ -1,11 +1,17 @@
-def ano_bissexto(ano)
-  if(ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)
-    puts "#{ano} é um ano bissexto!"  
+def leap_year(year)
+  if(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)
+    puts ""
+    puts "#{year} é um ano bissexto!"  
   else
-    puts "#{ano} não é um ano bissexto!"    
+    puts ""
+    puts "#{year} não é um ano bissexto!"    
   end
 end
 
-print "Digite um ano qualquer: "
-ano = gets.chomp.to_i
-ano_bissexto(ano)
+loop do
+  print "Digite um ano qualquer: "
+  year = gets.chomp
+  break if year.downcase == 'sair'
+  year = year.to_i
+  leap_year(year)
+end
