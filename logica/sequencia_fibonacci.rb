@@ -6,10 +6,10 @@ def fibonacci(n)
 end
 
 puts "Digite o número de termos da sequência de Fibonacci:"
-termos = gets.chomp.to_i
+terms = gets.chomp.to_i
 fibonacci_sequence = []
-(0..termos-1).each do |n|
+(0..terms-1).each do |n|
   fibonacci_sequence << fibonacci(n)  
 end
 
-puts "Sequêcia de Fibonacci até o #{termos}º termo: #{fibonacci_sequence.join(',')}"
+puts "Sequêcia de Fibonacci até o #{terms}º termo: #{fibonacci_sequence.join(',')}"
