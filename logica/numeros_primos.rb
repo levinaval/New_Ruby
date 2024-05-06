@@ -1,19 +1,19 @@
-def primo?(number)
+def cousin?(number)
   return false if number <= 1
   (2..Math.sqrt(number)).none? { |i| (number % i).zero? }
 end
 
-def primeiros_primos(n)
-  primos = []
+def first_cousins(n)
+  cousins = []
   i = 2
-  while primos.length < n
-    primos << i if primo?(i)
+  while cousins.length < n
+    cousins << i if cousin?(i)
     i += 1
   end
-  return primos
+  return cousins
 end
 
 puts "Digite a quantidade de números primos que gerar:"
-quantidade = gets.chomp.to_i
-primos = primeiros_primos(quantidade)
-puts "Os primeiros #{quantidade} números primos são: #{primos.join(',')}"
+amount = gets.chomp.to_i
+cousins = first_cousins(amount)
+puts "Os primeiros #{amount} números primos são: #{cousins.join(',')}"
