@@ -1,6 +1,8 @@
 #Vamos criar um app simples para fazer pedidos.
 
+# Definição da classe Cafeteria, responsável por gerenciar os pedidos de lanches e de bebidas.
 class Cafeteria
+# Constante contendo o menu de lanches e seus preços.
   SNACKS_MENU = {
     "Sopa" => 5.0,
     "Cachorro Quente" => 7.5,
