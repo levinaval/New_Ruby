@@ -12,6 +12,7 @@ class Cafeteria
     "Pastel" => 6.0
   }.freeze
 
+  # Constante contendo o menu de bebidas e seus preços.
   DRINKS_MENU = {
     "Suco" => 4.0,
     "Refrigerante" => 3.5,
@@ -19,11 +20,13 @@ class Cafeteria
     "Caldo de Cana" => 4.5
   }.freeze
 
+  # Método de inicialização de classe.
   def initialize
-    @order_snacks = []
-    @order_drinks = []
+    @order_snacks = [] #Array para armazenar os lanches do pedido.
+    @order_drinks = [] #Array para armazenar as bebidas do pedido.
   end
 
+  #Método para exibir o menu de lanches.
   def shows_snack_menu
     puts "### MENU DE LANCHES ###"
     SNACKS_MENU.each_with_index do |(item, prece), index|
@@ -31,6 +34,7 @@ class Cafeteria
     end
   end
 
+  # Método para exibir o menu de bebidas.
   def shows_drinks_menu
     puts "### MENU DE BEBIDAS ###"
     DRINKS_MENU.each_with_index do |(item, prece), index|
@@ -38,16 +42,19 @@ class Cafeteria
     end
   end
 
+  # Método para adicionar um lanche ao pedido.
   def shows_snack_order(number)
     item = SNACKS_MENU.keys[number - 1]
     @order_snacks << item if item
   end
 
+  # Método para adicionar uma bebida ao pedido. 
   def order_a_drink(number)
     item = DRINKS_MENU.keys[number - 1]
     @order_drinks << item if item
   end
 
+  # Método para exibir o pedido atual.
   def show_order
     puts "### PEDIDO ###"
     puts "Lanches:"
@@ -58,6 +65,7 @@ class Cafeteria
     puts "Total: R$ #{total}"
   end
 
+  # Método para remover um item do pedido.
   def remove_ordered_item(tipo, indice)
     if tipo == :lanche
       @order_snacks.delete_at(indice)
@@ -68,6 +76,7 @@ class Cafeteria
 
   private
 
+  # Método para calcular o total do pedido.
   def calculate_total
     total_lanches = @order_snacks.sum { |item| SNACKS_MENU[item] }
     total_bebidas = @order_drinks.sum { |item| DRINKS_MENU[item] }
@@ -75,10 +84,13 @@ class Cafeteria
   end
 end
 
+# Instaciação da classe Cafeteria.
 cafeteria = Cafeteria.new
 
+# Mensagem de boas vindas ao usuário.
 puts "Olá! Bem-vindo à Cafeteria Web."
 
+# Loop para interação com o usuário.
 loop do
   puts "\nO que gostaria de fazer?"
   puts "1. Ver o menu de lanches"
@@ -90,6 +102,7 @@ loop do
   print "Escolha uma opção: "
   opcao = gets.chomp.to_i
 
+  # Caso para cada opção escolhida pelo usuário. 
   case opcao
   when 1
     cafeteria.shows_snack_menu
