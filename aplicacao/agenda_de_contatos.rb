@@ -15,15 +15,17 @@ class Contact
   end
 end
 
+# Definição da classe ContactList, que genrencia uma lista de contatos.
 class ContactList
+  # Método de inicialização da classe ContactList.
   def initialize
-    @contacts = []
+    @contacts = [] #Array para armazenar os contatos.
   end
-
+  # Método para adicionar um contato à lista.
   def add_contact(contact)
     @contacts << contact
   end
-
+  # Método para exibir todos os contatos da lista.
   def display_contacts
     puts "Lista de Contatos:"
     @contacts.each_with_index do |contact, index|
@@ -32,20 +34,24 @@ class ContactList
   end
 end
 
+# Instanciação da classe ContactList para gerencia os contatos.
 contact_list = ContactList.new
 
+# Loop para permitir que o usuário adicione contatos à lista.
 loop do
   puts "Digite o nome do contato (ou 'sair' para sair):"
   name = gets.chomp
-  break if name.downcase == 'sair'
+  break if name.downcase == 'sair' # Sai do loop se o usuário digitar 'sair'.
   
   puts "Digite o número de telefone:"
   phone_number = gets.chomp
   
   puts "Digite o endereço de e-mail:"
   email = gets.chomp
-
+  
+  # Cria um novo objeto de contato e adiciona à lista de contatos.
   contact = Contact.new(name, phone_number, email)
   contact_list.add_contact(contact)
+  # Exibe a lista de contatos atualizada.
   contact_list.display_contacts
 end
