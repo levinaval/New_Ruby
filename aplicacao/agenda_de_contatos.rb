@@ -1,12 +1,15 @@
 #Vamos criar um app simples para contatos telefonicos.
 
+# Definição da classe Contact, que representa um contato com nome, número de telefone e e-mail.
 class Contact
   attr_reader :name, :phone_number, :email
 
+  # Método de inicialização da classe Contact.
   def initialize(name, phone_number, email)
     @name, @phone_number, @email = name, phone_number, email
   end
 
+  # Método para formatar a exibição do contato como uma string.
   def to_s
     "#{@name}: #{@phone_number}, #{@email}"
   end
