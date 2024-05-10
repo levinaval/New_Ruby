@@ -2,7 +2,7 @@
 
 class AppIdiomas
   attr_accessor :vocabulario
-
+# Método de inicialização da classe AppIdiomas
   def initialize
     @vocabulario = {}
   end
