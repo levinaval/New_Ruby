@@ -1,7 +1,8 @@
-#Vamos criar um app simples para efetuar cadastros.
+# Vamos criar um app simples para efetuar cadastros.
 
+# Solicita o nome da pessoa.
 puts "Cadastro de pessoa física."
-print "Primeiro nome:"
+print "seu nome nome:"
 name = gets.chomp
 
 information1 = if(name.length < 4 || name.length > 30) then "Quantidade de caracteres abaixo de 4 ou acima de 30." else "#{name}" end
