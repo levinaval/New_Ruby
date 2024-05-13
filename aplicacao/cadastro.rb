@@ -12,6 +12,7 @@ information1 = if(name.length < 4 || name.length > 30) then "Quantidade de carac
 print "Idade: "
 age = gets.chomp.to_i
 
+# Verifica se a idade, convertendo para inteiro.
 information2 = if(age <= 4 || age >= 100) then "Idade igual a 0 ou superior a 100 anos!" else "#{age}" end
 
 print "Endereço: "
