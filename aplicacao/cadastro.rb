@@ -5,6 +5,7 @@ puts "Cadastro de pessoa física."
 print "seu nome nome:"
 name = gets.chomp
 
+# Verifica se o nome possui menos de 4 ou mais de 30 caracteres
 information1 = if(name.length < 4 || name.length > 30) then "Quantidade de caracteres abaixo de 4 ou acima de 30." else "#{name}" end
 
 print "Idade: "
