@@ -15,9 +15,11 @@ age = gets.chomp.to_i
 # Verifica se a idade, convertendo para inteiro.
 information2 = if(age <= 4 || age >= 100) then "Idade igual a 0 ou superior a 100 anos!" else "#{age}" end
 
+# Solicita o endereço da pessoa.
 print "Endereço: "
 adress = gets.chomp
 
+# Verifica se o endereço possui menos ou mais caracteristicas.
 information3 = if(adress.length < 4 || adress.length > 100) then "Quantidade de caracteres abaixo de 4 ou acina de 100" else "#{adress}" end
 
 print "Número: "
