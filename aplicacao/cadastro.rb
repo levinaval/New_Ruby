@@ -22,6 +22,7 @@ adress = gets.chomp
 # Verifica se o endereço possui menos ou mais caracteristicas.
 information3 = if(adress.length < 4 || adress.length > 100) then "Quantidade de caracteres abaixo de 4 ou acina de 100" else "#{adress}" end
 
+# Solicita e armazena o número, convertendo-o para 
 print "Número: "
 number = gets.chomp.to_i
 
