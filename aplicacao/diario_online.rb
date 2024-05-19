@@ -1,20 +1,23 @@
 #Vamos criar um app simples para diarios.
 
+# Classe DiaryEntry para representar uma entrada no diário.
 class DiaryEntry
-  attr_reader :date, :content
+  attr_reader :date, :content # Cria método de leitura para os atributos date e content.
 
+  # Método inicializador, chamado quando um novo objeto DiaryEntry é criado.
   def initialize(date, content)
-    @date, @content = date, content
+    @date, @content = date, content # Atribui os parâmetros passados aos atributos da instância.
   end
 
+  # Método para retornar a entrada do díario como uma string formatada.
   def to_s
     "#{@date}:\n#{@content}"
   end
 end
-
+# Classe OnlineDiary para gerenciar várias entradas do diário.
 class OnlineDiary
   def initialize
-    @entries = []
+    @entries = [] # Inicializa
   end
 
   def add_entry(entry)
