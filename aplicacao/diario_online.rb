@@ -38,12 +38,13 @@ online_diary = OnlineDiary.new
 loop do
   puts "Digite a data da entrada (ou 'sair' para sair):"
   date = gets.chomp # Lê a data da entrada do usuário.
-  break if date.downcase == 'sair' # Sai do loop se o usuário di
+  break if date.downcase == 'sair' # Sai do loop se o usuário digita 'sair'
   
   puts "Digite o conteúdo da entrada:"
-  content = gets.chomp
-
+  content = gets.chomp # Lê o conteúdo da entrada do usuário.
+# Cria uma nova entrada de diário e a adiciona ao diário online.
   entry = DiaryEntry.new(date, content)
   online_diary.add_entry(entry)
+  # Exibe todas as entradas do diário após adicionar a nova entrada.
   online_diary.display_entries
 end

@@ -1,8 +1,9 @@
 #Vamos criar um app simples para registro de treinos.
 
+# Definição da Classe Exercise para representar um exercício.
 class Exercise
-  attr_reader :name, :duration, :calories_burned
-
+  attr_reader :name, :duration, :calories_burned # Cria métodos de leitura para os atributos name, duration e calories_burned.
+ # Método inicializador, chamado quando um novo objetivo exercise é criado.
   def initialize(name, duration, calories_burned)
     @name, @duration, @calories_burned = name, duration, calories_burned
   end
