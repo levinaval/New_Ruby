@@ -17,28 +17,28 @@ end
 # Classe OnlineDiary para gerenciar várias entradas do diário.
 class OnlineDiary
   def initialize
-    @entries = [] # Inicializa
+    @entries = [] # Inicializa um array vazio para armazenar as entradas do diário.
   end
-
+# Método para exibir todas as entradas do diário.
   def add_entry(entry)
-    @entries << entry
+    @entries << entry # Adiciona a entrada ao array de entradas.
   end
-
+# Método para exibir todas as entradas do diário.
   def display_entries
-    puts "Entradas do Diário:"
-    @entries.each do |entry|
-      puts entry
-      puts "-" * 20
+    puts "Entradas do Diário:" # Imprime o cabeçalho.
+    @entries.each do |entry| # Itera sobre cada entrada no array.
+      puts entry # Usa o método to_s de DiaryEntry para imprimir a entrada
+      puts "-" * 20 # Imprime uma linha de separação
     end
   end
 end
-
+# Cria uma nova instância de OnlineDiary
 online_diary = OnlineDiary.new
-
+# Loop para adicionar entradas ao diário.
 loop do
   puts "Digite a data da entrada (ou 'sair' para sair):"
-  date = gets.chomp
-  break if date.downcase == 'sair'
+  date = gets.chomp # Lê a data da entrada do usuário.
+  break if date.downcase == 'sair' # Sai do loop se o usuário di
   
   puts "Digite o conteúdo da entrada:"
   content = gets.chomp
