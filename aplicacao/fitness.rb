@@ -12,24 +12,24 @@ class Exercise
     "Exercício: #{name} - #{@duration} minutos, calorias queimadas: #{@calories_burned}"
   end
 end
-
+# Definição da classe FitnessApp para gerenciar vários exercícios.
 class FitnessApp
   def initialize
-    @exercises = []
+    @exercises = [] # Inicializa um array vazio para armazenar os exercícios. 
   end
-
+# Método para adicionar um novo exercício ao registro.
   def add_exercise(exercise)
-    @exercises << exercise
+    @exercises << exercise # Adiciona o exerciçio ao array de exercícios
   end
-
+# Método para exibir todos os exercícios registrados
   def display_exercises
-    puts "Registro de Exercícios:"
-    @exercises.each do |exercise|
-      puts exercise
+    puts "Registro de Exercícios:" # Imprime o cabeçalho.
+    @exercises.each do |exercise| # Itera sobre cada exercício no array
+      puts exercise # Usa o método to_s de Exercise para imprimir os detalhes do exercício. 
     end
   end
 end
-
+# Cria uma nova instâcia de FitnessApp.
 fitness_app = FitnessApp.new
 
 loop do
