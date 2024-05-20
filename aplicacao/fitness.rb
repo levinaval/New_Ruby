@@ -5,9 +5,9 @@ class Exercise
   attr_reader :name, :duration, :calories_burned # Cria métodos de leitura para os atributos name, duration e calories_burned.
  # Método inicializador, chamado quando um novo objetivo exercise é criado.
   def initialize(name, duration, calories_burned)
-    @name, @duration, @calories_burned = name, duration, calories_burned
+    @name, @duration, @calories_burned = name, duration, calories_burned # Atribui os parâmetros passados aos atributos da instância.
   end
-
+# Método para retornar os detalhes do exercício como uma string formatada.
   def to_s
     "Exercício: #{name} - #{@duration} minutos, calorias queimadas: #{@calories_burned}"
   end
