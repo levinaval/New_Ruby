@@ -31,21 +31,22 @@ class FitnessApp
 end
 # Cria uma nova instâcia de FitnessApp.
 fitness_app = FitnessApp.new
-
+# Loop para adicionar exercícios ao registro.
 loop do
   puts ""
   puts "Digite o nome do exercício (ou 'Sair'):"
-  name = gets.chomp
-  break if name.downcase == 'sair'
+  name = gets.chomp # Lê o nome do exercício do usuário.
+  break if name.downcase == 'sair'# Sai do loop se o usuário digitar 'sair'.
 
   puts "digite a duração do exercício(em minutos):"
-  duration = gets.to_i
+  duration = gets.to_i # Lê a duração do execício do usuário.
 
   puts "Digite as calorias queimandas:"
-  calories_burned = gets.to_i
+  calories_burned = gets.to_i # Lê as calorias queimadas do usuário.
   puts ""
-
+# Cria uma nova instância de Exercise com os dados fornecidos e adiciona ao registro de treinos.
   exercise = Exercise.new(name, duration, calories_burned)
   fitness_app.add_exercise(exercise)
+  # Exibe todos os exercícios resgistrados após adicionar o novo exercício.
   fitness_app.display_exercises
 end
