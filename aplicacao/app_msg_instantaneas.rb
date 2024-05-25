@@ -26,7 +26,7 @@ class ChatApp
     @mensages.each do |message|
       puts message
     end
-  end
+  end 
 end
 
 chat_app = ChatApp.new
@@ -42,4 +42,4 @@ loop do
     message = Message.new(sender, content)
     chat_app.send_message(message)
     chat_app.diplay_messages 
-end
+end 
