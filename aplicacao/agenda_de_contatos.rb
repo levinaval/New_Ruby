@@ -32,7 +32,7 @@ class ContactList
       puts "#{index + 1}. #{contact}"
     end
   end
-end
+end 
 
 # Instanciação da classe ContactList para gerencia os contatos.
 contact_list = ContactList.new
@@ -43,10 +43,10 @@ loop do
   name = gets.chomp
   break if name.downcase == 'sair' # Sai do loop se o usuário digitar 'sair'.
   
-  puts "Digite o número de telefone:"
+  puts 'Digite o número de telefone:'
   phone_number = gets.chomp
   
-  puts "Digite o endereço de e-mail:"
+  puts 'Digite o endereço de e-mail:'
   email = gets.chomp
   
   # Cria um novo objeto de contato e adiciona à lista de contatos.
