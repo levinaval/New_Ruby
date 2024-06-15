@@ -1,5 +1,5 @@
 #Vamos criar um app simples para contatos telefonicos.
-
+#
 # Definição da classe Contact, que representa um contato com nome, número de telefone e e-mail.
 class Contact
   attr_reader :name, :phone_number, :email
