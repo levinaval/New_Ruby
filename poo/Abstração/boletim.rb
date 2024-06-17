@@ -11,7 +11,7 @@ class School
     @note1 = note1
     @note2 = note2
     @note3 = note3
-  end
+  end 
 
   def bulletin
    sum = @note1 + @note2 + @note3
