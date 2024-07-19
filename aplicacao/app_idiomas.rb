@@ -23,7 +23,7 @@ loop do
   puts "O que você gostaria de fazer?"
   puts "1. Adicionar palavra ao vocabulário"
   puts "2. Traduzir uma palavra"
-  puts "3. Sair"
+  puts "3. Sair e não voltar"
 
   print "Escolha uma opção: "
   opcao = gets.chomp.to_i
