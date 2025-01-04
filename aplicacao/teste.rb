@@ -19,9 +19,11 @@
 {nome:"Amigo3" , telefone:"3"},
 {nome:"Amigo4" , telefone:"4"},
 ]
+
 def todos_contatos
     @agenda.each do |contato|
         putd "#{contato[:nome]} - #{contato[:telefone]}"
+    end
 end
 
 loop do 
@@ -38,7 +40,3 @@ puts " 1. Contatos\n2. Adicionar Contato\n3.Ver Contrato\n4. Editar Contato\n5. 
 end
 # faça um teste para verificar se rodou 
     # assim que alterar algo infomar no grupo
-
-
-
-
