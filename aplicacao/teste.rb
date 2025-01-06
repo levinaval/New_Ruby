@@ -3,6 +3,7 @@
 # Contato terão as seguintes informações: nome e telefone
 # Podemos ver todos os contatos registrados ou somente um contato;
 
+# Contatos da agenda.
 @agenda =[
 {nome:"EuGiovane" , telefone:"21971331981"},
 {nome:"Amigo1" , telefone:"1"},
@@ -11,9 +12,21 @@
 {nome:"Amigo4" , telefone:"4"},
 ]
 
+# Método para exibir todos os contatos da agenda e imprime o nome e telefone de cada contato.
 def todos_contatos
     @agenda.each do |contato|
         putd "#{contato[:nome]} - #{contato[:telefone]}"
+    end
+end
+
+# Método para exibir os detalhes de um único contato.
+def ver_contato
+    puts "Digite o nome do contato que deseja visualizar:"
+    nome = gets.chomp
+    contato = @agenda.find { |c| c[:nome].casecmp(nome).zero? }
+
+    if contato
+        puts "Contato não encontrado."
     end
 end
 
