@@ -1,13 +1,4 @@
-# PROJETO ENTRE AMIGOS
-
-# AQUI ESTA O LINK DA AULA 01  " https://www.youtube.com/watch?v=pMmyjj8qvO0&t=186s "
-
-#tudo que quiser escrever siga esse exemplo e deixa seu comentario. 
-
-# INICIO DA AULA
-
-#AULA 01 
-
+# PROJETO AGENDA
 # Adicionar, Editar e Remover contato:
 # Contato terão as seguintes informações: nome e telefone
 # Podemos ver todos os contatos registrados ou somente um contato;
