@@ -67,6 +67,20 @@ def editar_contato
     end
 end
 
+# Método para remover um contato da agenda.
+def remover_contato
+    puts "Digite o nome do contato que deseja remover:"
+    nome = gets.chomp
+    contato = @agenda.find { |c| c[:nome].casecmp(nome).zero? }
+
+    if contato
+        @agenda.delete(contato)
+        puts "Contato removido com sucesso!"
+    else
+        puts "Contato não encontrado."
+    end
+end
+
 loop do 
 
 puts " 1. Contatos\n2. Adicionar Contato\n3. Ver Contrato\n4. Editar Contato\n5. Remover Contato\n0. Sair"
