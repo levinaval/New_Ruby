@@ -5,12 +5,23 @@
 
 # Contatos da agenda.
 @agenda =[
-{nome:"EuGiovane" , telefone:"21971331981"},
+{nome:"Giovane" , telefone:"21971331981"},
 {nome:"Amigo1" , telefone:"1"},
 {nome:"Amigo2" , telefone:"2"},
 {nome:"Amigo3" , telefone:"3"},
 {nome:"Amigo4" , telefone:"4"},
 ]
+
+# Método para adicionar um novo contato na agenda.
+# Solicita o nome e telefone do usuário e adiciona ao array @agenda.
+def adicionar_contato
+    puts "\nDigite o nome do contato:"
+    nome = gets.chomp
+    puts "Digite o número do contato:"
+    numero = gets.chomp
+    @agenda << { nome: nome, numero: telefone }
+    puts "Contato adicionado com sucsso!"
+end
 
 # Método para exibir todos os contatos da agenda e imprime o nome e telefone de cada contato.
 def todos_contatos
