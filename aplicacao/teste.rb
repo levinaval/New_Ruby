@@ -21,13 +21,22 @@ loop do
 
 puts " 1. Contatos\n2. Adicionar Contato\n3.Ver Contrato\n4. Editar Contato\n5. Remover Contato\n0. Sair"
     codigo= gets.chomp.to_i
-    case 
-    when codigo == 0
-        puts"Até logo"
-        break
+    case codigo
+    when 0
+      puts"Até logo!"
+      break
 
-    when contato == 1
+    when 1
+        todos_contatos
+    when 2
+        adicionar_contato
+    when 3
+        ver_contato
+    when 4
+        editar_contato
+    when 5
+        remover_contato
+    else
+        puts "Opção inválida. Tente novamente"
     end
 end
-# faça um teste para verificar se rodou 
-    # assim que alterar algo infomar no grupo
